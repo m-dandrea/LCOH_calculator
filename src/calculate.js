@@ -1,7 +1,5 @@
-import data from '../data/workbook.json' with { type: 'json' };
-
-export { data };
-export const defaults = data.defaults;
+import {data, defaults} from './input-store.js';
+export { data, defaults };
 export function annuity(rate, years) {
   return rate === 0 ? 1 / years : rate / (1 - (1 + rate) ** -years);
 }
@@ -13,7 +11,8 @@ export function calculate(s = defaults, edits = {}) {
   const el = find(data.electrolysers, s.electrolyser);
   const st = find(data.storage, s.storage);
   const dist = find(data.distribution, s.distribution);
-  if (!e || !c || !el || !st || !dist) throw new Error('Unknown technology selection');
+  const transmission = data.transmission[0];
+  if (!e || !c || !el || !st || !dist || !transmission) throw new Error('Unknown technology selection');
   const p = {electricityPrice:e.price,tariff:e.tariff,emissions:e.emissions,carbonPrice:c.price,
     capex:el.capex,opex:el.opex,efficiency:el.efficiency,hours:el.hours,lifetime:el.lifetime,
     storageEfficiency:st.efficiency,storageUse:s.storageUse,storageDiscount:s.storageDiscount,
@@ -24,10 +23,10 @@ export function calculate(s = defaults, edits = {}) {
       p.productionDiscount < 0 || p.loadFactor <= 0 || p.loadFactor > 1 || p.transmissionKm < 0 ||
       p.distributionKm < 0 || p.capex < 0 || p.opex < 0 || p.tariff < 0 || p.electricityPrice < 0 ||
       p.efficiency > 1 || p.storageEfficiency > 1) throw new Error('Enter valid positive inputs and efficiencies between 0 and 100%.');
-  // Transmission constants are from el.trans!B4:C4; H2 transmission is HVDC in the workbook.
+  // The workbook's HVDC transmission data are editable on the Inputs tab.
   const electricity = p.electricityPrice + p.tariff;
   const carbonElectricity = p.emissions / 1000 * p.carbonPrice;
-  const transmitted = (electricity + carbonElectricity + (22.1 / (p.loadFactor * 8760)) * p.transmissionKm) / 0.98;
+  const transmitted = (electricity + carbonElectricity + (transmission.cost / (p.loadFactor * 8760)) * p.transmissionKm) / (1 - transmission.losses);
   const capexPerMwh = p.capex * 1000 * annuity(p.productionDiscount, p.lifetime) / p.hours;
   // The workbook's E17 uses CAPEX * annualised CAPEX / 1000, rather than fixed O&M on the original CAPEX.
   const fixedPerMwh = p.capex * capexPerMwh / 1000;
@@ -41,7 +40,7 @@ export function calculate(s = defaults, edits = {}) {
   const distributionCost = (((p.distributionKm * (dist.variable || 0) + (dist.fixed || 0)) / 1000) +
     p.distributionKm / 1000 * (dist.levelised || 0)) / perKg;
   const delivered = stored + distributionCost;
-  const deliveredEmission = p.emissions / (0.98 * p.efficiency * p.storageEfficiency * (1 - (dist.losses || 0))) / 1000;
+  const deliveredEmission = p.emissions / ((1 - transmission.losses) * p.efficiency * p.storageEfficiency * (1 - (dist.losses || 0))) / 1000;
   const fuelPrice = data.fuelPrices.find(row => row.year === Number(s.fuelYear));
   if (!fuelPrice) throw new Error('Fuel price year is unavailable in the workbook.');
   const fossils = Object.fromEntries(['coal','gas','diesel','wood'].map(k => [k,

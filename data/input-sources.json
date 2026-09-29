@@ -1,0 +1,3569 @@
+{
+  "electrolysers": {
+    "Alkaline 100 MW - 2030": {
+      "capex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L646",
+        "technology": "80 AEC 100 MW",
+        "parameter": "Specific investment [€/kW of total input_e]",
+        "unit": "€/kWoftotalinput_e",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "opex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L637",
+        "technology": "80 AEC 100 MW",
+        "parameter": "Fixed O&M [% of specific investment/year]",
+        "unit": "pct.ofspecificinvestment/year",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "efficiency": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L502",
+        "technology": "80 AEC 100 MW",
+        "parameter": "LHV-based efficiency (% total input_e [MWh/MWh])",
+        "unit": "MWh/MWh",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "heat": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L412",
+        "technology": "80 AEC 100 MW",
+        "parameter": "- hereof recoverable for district heating [%-points of heat loss]",
+        "unit": "pct.-pointsofheatloss",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "lifetime": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L520",
+        "technology": "80 AEC 100 MW",
+        "parameter": "Technical lifetime of plant [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "Alkaline 100 MW - 2040": {
+      "capex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L649",
+        "technology": "80 AEC 100 MW",
+        "parameter": "Specific investment [€/kW of total input_e]",
+        "unit": "€/kWoftotalinput_e",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "opex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L640",
+        "technology": "80 AEC 100 MW",
+        "parameter": "Fixed O&M [% of specific investment/year]",
+        "unit": "pct.ofspecificinvestment/year",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "efficiency": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L505",
+        "technology": "80 AEC 100 MW",
+        "parameter": "LHV-based efficiency (% total input_e [MWh/MWh])",
+        "unit": "MWh/MWh",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "heat": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L415",
+        "technology": "80 AEC 100 MW",
+        "parameter": "- hereof recoverable for district heating [%-points of heat loss]",
+        "unit": "pct.-pointsofheatloss",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "lifetime": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L523",
+        "technology": "80 AEC 100 MW",
+        "parameter": "Technical lifetime of plant [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "Alkaline 100 MW - 2050": {
+      "capex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L650",
+        "technology": "80 AEC 100 MW",
+        "parameter": "Specific investment [€/kW of total input_e]",
+        "unit": "€/kWoftotalinput_e",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "opex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L641",
+        "technology": "80 AEC 100 MW",
+        "parameter": "Fixed O&M [% of specific investment/year]",
+        "unit": "pct.ofspecificinvestment/year",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "efficiency": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L506",
+        "technology": "80 AEC 100 MW",
+        "parameter": "LHV-based efficiency (% total input_e [MWh/MWh])",
+        "unit": "MWh/MWh",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "heat": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L416",
+        "technology": "80 AEC 100 MW",
+        "parameter": "- hereof recoverable for district heating [%-points of heat loss]",
+        "unit": "pct.-pointsofheatloss",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "lifetime": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L524",
+        "technology": "80 AEC 100 MW",
+        "parameter": "Technical lifetime of plant [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "PEM 100 MW - 2030": {
+      "capex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1826",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "Specific investment [€/kW of total input_e]",
+        "unit": "€/kWoftotalinput_e",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "opex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1817",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "Fixed O&M [% of specific investment/year]",
+        "unit": "pct.ofspecificinvestment/year",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "efficiency": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1682",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "LHV-based efficiency (% total input_e [MWh/MWh])",
+        "unit": "MWh/MWh",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "heat": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1592",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "- hereof recoverable for district heating [%-points of heat loss]",
+        "unit": "pct.-pointsofheatloss",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "lifetime": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1700",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "Technical lifetime of plant [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "PEM 100 MW - 2040": {
+      "capex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1829",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "Specific investment [€/kW of total input_e]",
+        "unit": "€/kWoftotalinput_e",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "opex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1820",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "Fixed O&M [% of specific investment/year]",
+        "unit": "pct.ofspecificinvestment/year",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "efficiency": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1685",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "LHV-based efficiency (% total input_e [MWh/MWh])",
+        "unit": "MWh/MWh",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "heat": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1595",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "- hereof recoverable for district heating [%-points of heat loss]",
+        "unit": "pct.-pointsofheatloss",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "lifetime": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1703",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "Technical lifetime of plant [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "PEM 100 MW - 2050": {
+      "capex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1830",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "Specific investment [€/kW of total input_e]",
+        "unit": "€/kWoftotalinput_e",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "opex": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1821",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "Fixed O&M [% of specific investment/year]",
+        "unit": "pct.ofspecificinvestment/year",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "efficiency": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1686",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "LHV-based efficiency (% total input_e [MWh/MWh])",
+        "unit": "MWh/MWh",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "heat": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1596",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "- hereof recoverable for district heating [%-points of heat loss]",
+        "unit": "pct.-pointsofheatloss",
+        "priceYear": null,
+        "conversion": 0.01
+      },
+      "lifetime": {
+        "file": "data_sheets_for_renewable_fuels_15_with_index_alldata_long.xlsx",
+        "cell": "alldata_long!L1704",
+        "technology": "80 PEMEC 100 MW",
+        "parameter": "Technical lifetime of plant [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    }
+  },
+  "storage": {
+    "Tanks -2020": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1302",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1284",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1257",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1266",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1230",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1203",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "Tanks -2030": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1303",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1285",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1258",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1267",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1231",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1204",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "Tanks -2040": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1304",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1286",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1259",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1268",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1232",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1205",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "Tanks -2050": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1305",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1287",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1260",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1269",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1233",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1206",
+        "technology": "151a Hydrogen Storage - Tanks",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "LOHC -2020": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1514",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1505",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1523",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "EUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1469",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1478",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1442",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1415",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "LOHC -2030": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1515",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1506",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1524",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "EUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1470",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1479",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1443",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1416",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "LOHC -2040": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1516",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1507",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1525",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "EUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1471",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1480",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1444",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1417",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "LOHC -2050": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1517",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1508",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1526",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "EUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1472",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1481",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1445",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1418",
+        "technology": "151b Hydrogen Storage - LOHC",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "Caverns -2020": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1713",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1704",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1722",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "EUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1668",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1677",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1641",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1614",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "Caverns -2030": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1714",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1705",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1723",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "EUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1669",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1678",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1642",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1615",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "Caverns -2040": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1715",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1706",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1724",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "EUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1670",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1679",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1643",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1616",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "Caverns -2050": {
+      "capex": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1716",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Specific investment [M€/MWh]",
+        "unit": "MEUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1707",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Fixed O&M [€/MW/year]",
+        "unit": "EUR/MW/year",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1725",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "EUR/MWh",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "efficiency": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1671",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Round trip efficiency [%]",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "lifetime": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1680",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "capacity": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1644",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Input capacity for one unit [MW]",
+        "unit": "MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "duration": {
+        "file": "technology_datasheet_for_energy_storage - 0011.xlsx",
+        "cell": "alldata_flat!K1617",
+        "technology": "151c Hydrogen Storage - Caverns",
+        "parameter": "Energy storage capacity for one unit [MWh]",
+        "unit": "MWh",
+        "priceYear": null,
+        "conversion": 1
+      }
+    }
+  },
+  "districtHeat": {
+    "40 Comp. hp, airsource 1 MW|2025": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13505",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13559",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13550",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13631",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13469",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13541",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, airsource 1 MW|2030": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13506",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13560",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13551",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13632",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13470",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13542",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, airsource 1 MW|2040": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13508",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13562",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13553",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13634",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13472",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13544",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, airsource 1 MW|2050": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13509",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13563",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13554",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13635",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13473",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13545",
+        "technology": "40 Comp. hp, airsource 1 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, airsource 3 MW|2025": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13721",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13775",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13766",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13847",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13685",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13757",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, airsource 3 MW|2030": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13722",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13776",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13767",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13848",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13686",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13758",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, airsource 3 MW|2040": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13724",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13778",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13769",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13850",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13688",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13760",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, airsource 3 MW|2050": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13725",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13779",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13770",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13851",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13689",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13761",
+        "technology": "40 Comp. hp, airsource 3 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, airsource 10 MW|2025": {
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13982",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14063",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13901",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13973",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, airsource 10 MW|2030": {
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13983",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14064",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13902",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13974",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, airsource 10 MW|2040": {
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13985",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14066",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13904",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13976",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, airsource 10 MW|2050": {
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13986",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14067",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13905",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L13977",
+        "technology": "40 Comp. hp, airsource 10 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 1 MW|2025": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14180",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14234",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14225",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14297",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14144",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14216",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 1 MW|2030": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14181",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14235",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14226",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14298",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14145",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14217",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 1 MW|2040": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14183",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14237",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14228",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14300",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14147",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14219",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 1 MW|2050": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14184",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14238",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14229",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14301",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14148",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14220",
+        "technology": "40 Comp. hp, waste heat 1 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 3 MW|2025": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14387",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14441",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14432",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14504",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14351",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14423",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 3 MW|2030": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14388",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14442",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14433",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14505",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14352",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14424",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 3 MW|2040": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14390",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14444",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14435",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14507",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14354",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14426",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 3 MW|2050": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14391",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14445",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14436",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14508",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14355",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14427",
+        "technology": "40 Comp. hp, waste heat 3 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 10 MW|2025": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14594",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14648",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14639",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14711",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14558",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14630",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 10 MW|2030": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14595",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14649",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14640",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14712",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14559",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14631",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 10 MW|2040": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14597",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14651",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14642",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14714",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14561",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14633",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, excess heat 10 MW|2050": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14598",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14652",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14643",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14715",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14562",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14634",
+        "technology": "40 Comp. hp, waste heat 10 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, seawater 20 MW|2025": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14801",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14855",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14846",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14918",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14765",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14837",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, seawater 20 MW|2030": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14802",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14856",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14847",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14919",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14766",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14838",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, seawater 20 MW|2040": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14804",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14858",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14849",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14921",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14768",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14840",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "40 Comp. hp, seawater 20 MW|2050": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14805",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14859",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14850",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14922",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14769",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L14841",
+        "technology": "40 Comp. hp, seawater 20 MW",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "41 Electric Boilers 1-5 MW|2030": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15261",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15306",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15297",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15351",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15225",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15288",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "41 Electric Boilers 1-5 MW|2050": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15264",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15309",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15300",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15354",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15228",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15291",
+        "technology": "41 Electric boiler, small",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "41 Electric Boilers >10 MW|2030": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15450",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15495",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15486",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15540",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15414",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15477",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "41 Electric Boilers >10 MW|2050": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15453",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15498",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15489",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15543",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15417",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15480",
+        "technology": "41 Electric boiler, large",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "44 Natural Gas DH Only|2020": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15631",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15705",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15697",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15745",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15603",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15663",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "44 Natural Gas DH Only|2030": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15632",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15706",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15698",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15746",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15604",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15664",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "44 Natural Gas DH Only|2050": {
+      "efficiency": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15633",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Heat efficiency (net, annual average) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15707",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Nominal investment (*total) [MEUR/MW_h]",
+        "unit": "MEUR/MW_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15699",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Fixed O&M (*total) [EUR/MW_h/y]",
+        "unit": "EUR/MW_h/y",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15747",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Variable O&M (other O&M) [EUR/MWh_h]",
+        "unit": "EUR/MWh_h",
+        "priceYear": 2020,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15605",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Auxiliary Electricity consumption (share of heat gen.) []",
+        "unit": null,
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_el_and_dh_updated_alldatalong.xlsx",
+        "cell": "alldata_long!L15665",
+        "technology": "44 Natural Gas DH Only",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    }
+  },
+  "processHeat": {
+    "310.1 Electric boiler steam  |2030": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1080",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1113",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Nominal investment [M€/MW]",
+        "unit": "M€/MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1108",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Fixed O&M [€/MJ/s/year]",
+        "unit": "€/MJ/s/year",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1118",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "€/MWh",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1026",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1071",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "310.1 Electric boiler steam  |2040": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1082",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1115",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Nominal investment [M€/MW]",
+        "unit": "M€/MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1110",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Fixed O&M [€/MJ/s/year]",
+        "unit": "€/MJ/s/year",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1120",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "€/MWh",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1028",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1073",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "310.1 Electric boiler steam  |2050": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1083",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1116",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Nominal investment [M€/MW]",
+        "unit": "M€/MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1111",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Fixed O&M [€/MJ/s/year]",
+        "unit": "€/MJ/s/year",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1121",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "€/MWh",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1029",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1074",
+        "technology": "5.1b Electric boiler steam",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "310.2 Electric boiler hot water|2030": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1319",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1352",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Nominal investment [M€/MW]",
+        "unit": "M€/MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1347",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Fixed O&M [€/MJ/s/year]",
+        "unit": "€/MJ/s/year",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1357",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "€/MWh",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1265",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1310",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "310.2 Electric boiler hot water|2040": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1321",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1354",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Nominal investment [M€/MW]",
+        "unit": "M€/MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1349",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Fixed O&M [€/MJ/s/year]",
+        "unit": "€/MJ/s/year",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1359",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "€/MWh",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1267",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1312",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "310.2 Electric boiler hot water|2050": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1322",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1355",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Nominal investment [M€/MW]",
+        "unit": "M€/MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1350",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Fixed O&M [€/MJ/s/year]",
+        "unit": "€/MJ/s/year",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1360",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "€/MWh",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1268",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1313",
+        "technology": "5.2b Electric boiler hot wate",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "312.a Direct firing Natural Gas|2030": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1892",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1950",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Nominal investment [M€/MW]",
+        "unit": "M€/MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1945",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Fixed O&M [€/MJ/s/year]",
+        "unit": "€/MJ/s/year",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1955",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "€/MWh",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1838",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1883",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "312.a Direct firing Natural Gas|2040": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1894",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1952",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Nominal investment [M€/MW]",
+        "unit": "M€/MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1947",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Fixed O&M [€/MJ/s/year]",
+        "unit": "€/MJ/s/year",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1957",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "€/MWh",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1840",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1885",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "312.a Direct firing Natural Gas|2050": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1895",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "capex": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1953",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Nominal investment [M€/MW]",
+        "unit": "M€/MW",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1948",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Fixed O&M [€/MJ/s/year]",
+        "unit": "€/MJ/s/year",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1958",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Variable O&M [€/MWh]",
+        "unit": "€/MWh",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1841",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K1886",
+        "technology": "7.1 Direct firing Natural Gas",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "312.c Direct firing Electricity|2030": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2148",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2176",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Fixed O&M  [EUR/MW_y]",
+        "unit": "EUR/MW_y",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2186",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Variable O&M [EUR/MWh]",
+        "unit": "EUR/MWh",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2097",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2143",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "312.c Direct firing Electricity|2040": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2150",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2178",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Fixed O&M  [EUR/MW_y]",
+        "unit": "EUR/MW_y",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2188",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Variable O&M [EUR/MWh]",
+        "unit": "EUR/MWh",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2099",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2145",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "312.c Direct firing Electricity|2050": {
+      "efficiency": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2151",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Total efficiency, net [%], annual average",
+        "unit": "pct.",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "fixed": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2179",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Fixed O&M  [EUR/MW_y]",
+        "unit": "EUR/MW_y",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "variable": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2189",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Variable O&M [EUR/MWh]",
+        "unit": "EUR/MWh",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "aux": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2100",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Auxiliary electricity consumption [% of heat gen]",
+        "unit": "pct.ofheatgen",
+        "priceYear": null,
+        "conversion": 100
+      },
+      "lifetime": {
+        "file": "technology_data_for_industrial_process_heat.xlsx",
+        "cell": "alldata_flat!K2146",
+        "technology": "7.3 Direct electric firing",
+        "parameter": "Technical lifetime [years]",
+        "unit": "years",
+        "priceYear": null,
+        "conversion": 1
+      }
+    }
+  }
+}

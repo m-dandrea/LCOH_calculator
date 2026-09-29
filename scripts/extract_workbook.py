@@ -21,6 +21,7 @@ data = {
     'electrolysers': records('electrolyser', 4, 15, {'name':'A','year':'B','capex':'C','opex':'D','efficiency':'E','heat':'F','lifetime':'G','hours':'H'}),
     'storage': records('h2.storage', 3, 14, {'name':'A','year':'B','capex':'C','fixed':'D','variable':'E','efficiency':'F','lifetime':'G','capacity':'H','duration':'I'}),
     'distribution': records('h2.distr', 4, 9, {'name':'A','fixed':'B','variable':'C','losses':'D','levelised':'E'}),
+    'transmission': records('el.trans', 4, 4, {'name':'A','losses':'B','cost':'C'}),
     'fuelPrices': records('Fuel price projection', 5, 36, {'year':'A','gas':'C','coal':'D','diesel':'G','wood':'J'}),
     'fuelEmissions': {'gas':w['fossil.source']['E6'].value, 'coal':w['fossil.source']['E7'].value, 'diesel':w['fossil.source']['E10'].value, 'wood':0},
     'districtHeat': records('DH Summary', 6, 52, {'name':'B','year':'C','efficiency':'D','capex':'E','fixed':'F','variable':'G','aux':'H','lifetime':'I','fuel':'J'}),
