@@ -1,6 +1,6 @@
 # Hydrogen cost calculator
 
-A browser app built from `Hydrogen_calc_tool_17May22_clean.xlsx`. It reproduces the workbook's default hydrogen cost chain and its fuel and heat comparisons, with technology choices and editable assumptions. The data in `data/workbook.json` was extracted from the supplied 2022 workbook; it is not a live price feed.
+A browser app built from `Hydrogen_calc_tool_17May22_clean.xlsx`. It reproduces the workbook's default hydrogen cost chain, fuel and heat comparisons, and separate Danish 2030 electricity scenarios, with technology choices and editable assumptions. The data in `data/workbook.json` was extracted from the supplied 2022 workbook; it is not a live price feed.
 
 ## Run
 
@@ -18,6 +18,6 @@ npm run dev
 - Heat CAPEX for process heat follows `HeatCalculation!C52:E52`, which uses the district heating full-load hours (1,752), while process heat fixed O&M uses 7,884 hours.
 - Hydrogen energy content is 0.0394 MWh/kg LHV, as in the workbook. Other assumptions are intentionally preserved even where units or conventions in the source seem unusual.
 - Workbook fuel prices cover 2019–2050. Heat technology catalogues use their available milestone years; the page offers the years common to its main heat options.
-- The workbook also contains Danish scenario worksheets and static source technology catalogues. This app focuses on the main `Results Summary` pathway and its supporting calculations.
+- The workbook also contains static source technology catalogues and flow charts. This app focuses on the main `Results Summary` pathway, its supporting calculations, and the four Danish 2030 scenario results; it does not reproduce every worksheet as an editable screen.
 
 The extraction script reads the original workbook from `../upload/` when available; the extracted JSON is committed so the app does not need Excel at runtime.

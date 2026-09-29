@@ -25,6 +25,7 @@ data = {
     'fuelEmissions': {'gas':w['fossil.source']['E6'].value, 'coal':w['fossil.source']['E7'].value, 'diesel':w['fossil.source']['E10'].value, 'wood':0},
     'districtHeat': records('DH Summary', 6, 52, {'name':'B','year':'C','efficiency':'D','capex':'E','fixed':'F','variable':'G','aux':'H','lifetime':'I','fuel':'J'}),
     'processHeat': records('ProcH Summary', 6, 37, {'name':'B','year':'C','efficiency':'D','capex':'E','fixed':'F','variable':'G','aux':'H','lifetime':'I','fuel':'J'}),
+    'danishScenarios': records('Elomk.', 4, 7, {'name':'C','source':'D','price':'E','tariff':'F','hours':'G'}),
     'defaults': {'electricity':'Offgrid offshore wind, w/ island','carbon':'1 - 2022 (low)','electrolyser':'Alkaline 100 MW - 2050','storage':'LOHC -2050','distribution':'EU H2 Backbone - Medium','fuelYear':2050,'heatYear':2030,'transmissionKm':500,'distributionKm':500,'loadFactor':0.45,'storageUse':0.3,'storageDiscount':0.05,'productionDiscount':0.05,'heatDiscount':0.05,'districtHours':1752,'processHours':7884,'hydrogenMwhPerKg':0.0394,'dkkPerEur':7.45}
 }
 for key in ('districtHeat','processHeat'):

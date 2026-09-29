@@ -87,3 +87,13 @@ export function heatCost(x, fuel, electricity, discount, hours, capexHours) {
     total:investment + fixed + input + aux + carbon + variable,
     efficiency:x.efficiency};
 }
+
+export function danish2030() {
+  const technology = data.electrolysers.find(x=>x.name==='Alkaline 100 MW - 2030');
+  return data.danishScenarios.map(scenario=>{
+    const investment = technology.capex * 7.5 * 1000 * annuity(0.035, technology.lifetime);
+    const fixed = technology.capex * 7.5 * 1000 * technology.opex;
+    return {...scenario, cost:((investment+fixed)/scenario.hours + scenario.price + scenario.tariff)/
+      (3.6*technology.efficiency)};
+  });
+}

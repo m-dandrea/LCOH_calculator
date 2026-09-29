@@ -1487,6 +1487,36 @@
       "fuel": "Electricity"
     }
   ],
+  "danishScenarios": [
+    {
+      "name": "Energiør offshore LCoE",
+      "source": "Offshore (offgrid)",
+      "price": 305,
+      "tariff": 0,
+      "hours": 4600
+    },
+    {
+      "name": "KF21 ongrid",
+      "source": "Miks (ongrid) (ingen PtX",
+      "price": 109,
+      "tariff": 100,
+      "hours": 2915
+    },
+    {
+      "name": "KF21 m. øer ongrid",
+      "source": "Miks (ongrid) (ingen PtX",
+      "price": 89,
+      "tariff": 100,
+      "hours": 2961
+    },
+    {
+      "name": "Udvidet egenproducent",
+      "source": "Landvind og PV (offgrid)",
+      "price": 165,
+      "tariff": 0,
+      "hours": 4760
+    }
+  ],
   "defaults": {
     "electricity": "Offgrid offshore wind, w/ island",
     "carbon": "1 - 2022 (low)",

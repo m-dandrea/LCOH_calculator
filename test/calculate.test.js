@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {calculate, defaults} from '../src/calculate.js';
+import {calculate, defaults, danish2030} from '../src/calculate.js';
 
 function close(actual, expected) { assert.ok(Math.abs(actual-expected)<1e-8, `${actual} != ${expected}`); }
 test('matches cached workbook summary for its default pathway', () => {
@@ -15,6 +15,11 @@ test('matches cached workbook summary for its default pathway', () => {
   close(r.heat.district.find(x=>x.name==='44 Natural Gas DH Only' && x.fuel==='Hydrogen').total,82.98628124474878);
   close(r.heat.process.find(x=>x.name.trim()==='310.1 Electric boiler steam').total,45.32659129608834);
   close(r.heat.process.find(x=>x.name==='312.a Direct firing Natural Gas' && x.fuel==='Hydrogen').total,83.12494921579585);
+});
+test('matches Danish 2030 scenario grid',()=>{
+  const results=danish2030();
+  [146.88150434916295,120.55043276480882,111.8340501926811,88.94271813168137]
+    .forEach((expected,i)=>close(results[i].cost,expected));
 });
 test('changing carbon price and route distance updates the downstream costs', () => {
   const base=calculate();
