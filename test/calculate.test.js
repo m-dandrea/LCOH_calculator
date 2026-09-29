@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {calculate, defaults, danish2030, data} from '../src/calculate.js';
-import {baseline, provenance, editInput, resetInput} from '../src/input-store.js';
+import {baseline, provenance, editInput, resetInput, addInput, removeInput, isCustom} from '../src/input-store.js';
 
 function close(actual, expected) { assert.ok(Math.abs(actual-expected)<1e-8, `${actual} != ${expected}`); }
 test('uses the 2030 AF25/KF26 reference pathway and carries hydrogen into heat', () => {
@@ -61,6 +61,16 @@ test('scenario grid loss and inherited hours remain editable', () => {
   assert.ok(danish2030().find(x=>x.name===name).cost<base);
   resetInput('danishScenarios',name);
   close(danish2030().find(x=>x.name===name).cost,base);
+});
+test('added scenarios require all accepted characteristics and can be removed', () => {
+  const row={name:'Test electricity case',price:50,tariff:10,emissions:20};
+  addInput('electricity',row);
+  assert.ok(isCustom('electricity',row.name));
+  assert.equal(data.electricity.find(x=>x.name===row.name).price,50);
+  assert.throws(()=>addInput('electricity',{name:'Incomplete',price:50,tariff:10}),/Complete every field/);
+  removeInput('electricity',row.name);
+  assert.ok(!data.electricity.some(x=>x.name===row.name));
+  assert.ok(!isCustom('electricity',row.name));
 });
 test('changing carbon price and route distance updates the downstream costs', () => {
   const base=calculate();

@@ -2,6 +2,8 @@
 
 A browser app built from `Hydrogen_calc_tool_17May22_clean.xlsx`. Its Hydrogen flowchart follows the workbook's illustrated pathway from electricity to the hydrogen tap, with choices and stage costs in the flow. A second flowchart follows the workbook's district and process heat branches, using its icons and the current fuel and technology inputs. The Heat flow tab displays all four district heating branches (electric boiler, electricity and excess heat, natural gas, hydrogen) and three process heat branches (electricity, natural gas, hydrogen) from the workbook sketch. Each branch has a technology selector; the tab ranks all available heat options by calculated cost, including hydrogen at the delivered cost from the Hydrogen flowchart. The separate Danish 2030 electricity scenarios remain on the hydrogen page. The Inputs tab shows editable source values. The default 2030 reference pathway uses AF25 and KF26 forecast inputs where comparable. It is not a live price feed.
 
+The Inputs tab also supports adding records to array-based technology and scenario tables. New rows must provide every field in the table's accepted units and validation range, are stored locally in the browser, and can be removed from the same table. Original workbook rows are protected.
+
 ## Run
 
 ```sh

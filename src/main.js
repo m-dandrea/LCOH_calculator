@@ -5,7 +5,7 @@ import './inputs.css';
 import './heat-flow.css';
 import {renderHeatFlow, renderHeatComparison} from './heat-flow.js';
 import {renderInputs, renderCharts} from './inputs.js';
-import {editInput, resetInput, resetAllInputs} from './input-store.js';
+import {editInput, resetInput, resetAllInputs, addInput, removeInput} from './input-store.js';
 
 const root = document.querySelector('#app');
 const state = {...defaults};
@@ -113,6 +113,24 @@ function filterRows() {
 root.addEventListener('input', event=>{if(event.target.id==='input-search'){inputQuery=event.target.value;filterRows();root.querySelector('#input-charts').innerHTML=renderCharts(inputCategory,inputQuery,chartYear);}});
 root.addEventListener('click', event => {
   const target=event.target;
+  if(target.dataset.addSubmit){
+    const category=target.dataset.addSubmit;
+    const form=target.closest('.add-record');
+    const row={};
+    const name=form.querySelector('[data-add-name]');
+    if(name) row.name=name.value.trim();
+    const year=form.querySelector('[data-add-year]');
+    if(year) row.year=Number(year.value);
+    form.querySelectorAll('[data-add-field]').forEach(input=>{row[input.dataset.addField]=Number(input.value);});
+    try { addInput(category,row); render(); }
+    catch(error) { const message=form.querySelector('[data-add-error]'); message.textContent=error.message; message.hidden=false; }
+    return;
+  }
+  if(target.dataset.removeCategory){
+    try { removeInput(target.dataset.removeCategory,target.dataset.removeId); render(); }
+    catch(error) { window.alert(error.message); }
+    return;
+  }
   if(target.id==='reset'){Object.assign(state,defaults);edits={};render();}
   if(target.id==='reset-inputs'){resetAllInputs();Object.assign(state,defaults);edits={};render();}
   if(target.dataset.resetCategory){resetInput(target.dataset.resetCategory,target.dataset.resetId);Object.assign(state,defaults);edits={};render();}
