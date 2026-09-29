@@ -1,6 +1,6 @@
 # Hydrogen cost calculator
 
-A browser app built from `Hydrogen_calc_tool_17May22_clean.xlsx`. Its main dashboard follows the workbook's illustrated pathway from electricity to the hydrogen tap, with choices and stage costs in the flow. A second flowchart follows the workbook's district and process heat branches, using its icons and the current fuel and technology inputs. It also reproduces the fuel and heat comparisons and separate Danish 2030 electricity scenarios. The Inputs tab shows editable source values. Matched technology rows were updated from the supplied data sheets, while values without a comparable source remain from the workbook. It is not a live price feed.
+A browser app built from `Hydrogen_calc_tool_17May22_clean.xlsx`. Its Hydrogen flowchart follows the workbook's illustrated pathway from electricity to the hydrogen tap, with choices and stage costs in the flow. A second flowchart follows the workbook's district and process heat branches, using its icons and the current fuel and technology inputs. The Heat flow tab ranks district and process heat options by calculated cost, including hydrogen at the delivered cost from the Hydrogen flowchart. The separate Danish 2030 electricity scenarios remain on the hydrogen page. The Inputs tab shows editable source values. Matched technology rows were updated from the supplied data sheets, while values without a comparable source remain from the workbook. It is not a live price feed.
 
 ## Run
 
