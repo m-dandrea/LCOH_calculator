@@ -1,6 +1,6 @@
 # Hydrogen cost calculator
 
-A browser app built from `Hydrogen_calc_tool_17May22_clean.xlsx`. It reproduces the workbook's default hydrogen cost chain, fuel and heat comparisons, and separate Danish 2030 electricity scenarios, with technology choices and editable assumptions. The data in `data/workbook.json` was extracted from the supplied 2022 workbook; it is not a live price feed.
+A browser app built from `Hydrogen_calc_tool_17May22_clean.xlsx`. Its main dashboard follows the workbook's illustrated pathway from electricity to the hydrogen tap, with choices and stage costs in the flow. It also reproduces the fuel and heat comparisons and separate Danish 2030 electricity scenarios. The data in `data/workbook.json` was extracted from the supplied 2022 workbook; it is not a live price feed.
 
 ## Run
 
