@@ -33,3 +33,5 @@ The extraction script reads the original workbook from `../upload/` when availab
 - The transport and residential heating catalogues have no directly comparable model rows, so they do not replace the workbook's HVDC or hydrogen distribution assumptions. Fuel forecasts, carbon prices, and emissions factors likewise retain workbook values.
 
 Catalogue values retain their published currency and price-year basis; no inflation adjustment was applied. Re-run `python scripts/extract_workbook.py` followed by `python scripts/update_catalogue_inputs.py` with the supplied files in `../upload/` to regenerate the JSON.
+
+The Inputs tab also has comparison charts beneath each table. Technology charts compare CAPEX, efficiency, and an operating or lifetime measure for one selected catalogue year. The charts use the current editable values and keep unlike units on separate scales.

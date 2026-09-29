@@ -2,7 +2,7 @@ import {data, defaults, calculate, danish2030} from './calculate.js';
 import './style.css';
 import './flow.css';
 import './inputs.css';
-import {renderInputs} from './inputs.js';
+import {renderInputs, renderCharts} from './inputs.js';
 import {editInput, resetInput, resetAllInputs} from './input-store.js';
 
 const root = document.querySelector('#app');
@@ -11,6 +11,7 @@ let edits = {};
 let activeTab = location.hash === '#inputs' ? 'inputs' : 'dashboard';
 let inputCategory = 'electrolysers';
 let inputQuery = '';
+let chartYear = null;
 const header = () => `<header class="topbar"><div class="brand"><span class="brand-mark">H₂</span><span>Hydrogen cost calculator</span></div><nav aria-label="Main navigation"><a href="#dashboard" aria-current="${activeTab==='dashboard'?'page':'false'}">Dashboard</a><a href="#inputs" aria-current="${activeTab==='inputs'?'page':'false'}">Input data</a></nav>${activeTab==='dashboard'?'<button id="reset" class="subtle">Reset scenario</button>':''}</header>`;
 const fmt = (n, digits=2) => new Intl.NumberFormat('en-US',{maximumFractionDigits:digits,minimumFractionDigits:digits}).format(n);
 const escape = s => String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -26,7 +27,7 @@ const stage = (index, title, image, control, value, unit, final=false) => `<div 
   <div class="flow-control">${control}</div><div class="flow-value"><strong>${fmt(value)}</strong><span>${unit}</span></div></div>`;
 
 function render() {
-  if (activeTab === 'inputs') { root.innerHTML = header() + renderInputs(inputCategory,inputQuery); filterRows(); return; }
+  if (activeTab === 'inputs') { root.innerHTML = header() + renderInputs(inputCategory,inputQuery,chartYear); filterRows(); return; }
   const openDetails=[...root.querySelectorAll('details')].map(x=>x.open);
   const e = by('electricity', state.electricity), c = by('carbon', state.carbon), el = by('electrolysers', state.electrolyser), st = by('storage', state.storage);
   let r;
@@ -88,7 +89,8 @@ function render() {
 
 root.addEventListener('change', event => {
   const target = event.target;
-  if (target.id === 'input-category') { inputCategory=target.value; inputQuery=''; render(); return; }
+  if (target.id === 'input-category') { inputCategory=target.value; inputQuery=''; chartYear=null; render(); return; }
+  if (target.id === 'chart-year') { chartYear=Number(target.value); render(); return; }
   if (target.dataset.inputCategory) {
     const {inputCategory:category,inputId:id,inputField:field}=target.dataset;
     const value=Number(target.value);
@@ -117,7 +119,7 @@ function filterRows() {
   root.querySelectorAll('[data-search]').forEach(row=>{row.hidden=!row.dataset.search.includes(q); if(!row.hidden)shown++;});
   const empty=root.querySelector('#no-results'); if(empty) empty.hidden=shown!==0;
 }
-root.addEventListener('input', event=>{if(event.target.id==='input-search'){inputQuery=event.target.value;filterRows();}});
+root.addEventListener('input', event=>{if(event.target.id==='input-search'){inputQuery=event.target.value;filterRows();root.querySelector('#input-charts').innerHTML=renderCharts(inputCategory,inputQuery,chartYear);}});
 root.addEventListener('click', event => {
   const target=event.target;
   if(target.id==='reset'){Object.assign(state,defaults);edits={};render();}
