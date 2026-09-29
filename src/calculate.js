@@ -93,7 +93,9 @@ export function danish2030() {
   return data.danishScenarios.map(scenario=>{
     const investment = technology.capex * 7.5 * 1000 * annuity(0.035, technology.lifetime);
     const fixed = technology.capex * 7.5 * 1000 * technology.opex;
-    return {...scenario, cost:((investment+fixed)/scenario.hours + scenario.price + scenario.tariff)/
+    const loss = scenario.networkLoss || 0;
+    return {...scenario, cost:((investment+fixed)/scenario.hours +
+      (scenario.price + scenario.tariff)/(1-loss))/
       (3.6*technology.efficiency)};
   });
 }

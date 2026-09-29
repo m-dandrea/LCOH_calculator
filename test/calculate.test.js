@@ -46,6 +46,21 @@ test('matches Danish 2030 scenario grid',()=>{
   const results=danish2030();
   [215.95727295341126,217.11775175538006,206.13597750898228,149.77044480902845]
     .forEach((expected,i)=>close(results[i].cost,expected));
+  assert.equal(results.length,6);
+  close(results[4].price,641.6130136986301);
+  close(results[4].networkLoss,.0677);
+  close(results[4].cost,483.4737538024339);
+  close(results[5].cost,481.35493548798496);
+  assert.equal(provenance.danishScenarios[results[4].name].price.cell,'25.1!C4:C8763');
+  assert.equal(provenance.danishScenarios[results[4].name].hours.cell,'Elomk.!G5');
+});
+test('scenario grid loss and inherited hours remain editable', () => {
+  const name='KF26 spot + AF25 grid - DK1';
+  const base=danish2030().find(x=>x.name===name).cost;
+  editInput('danishScenarios',name,'networkLoss',0);
+  assert.ok(danish2030().find(x=>x.name===name).cost<base);
+  resetInput('danishScenarios',name);
+  close(danish2030().find(x=>x.name===name).cost,base);
 });
 test('changing carbon price and route distance updates the downstream costs', () => {
   const base=calculate();

@@ -36,9 +36,9 @@ function baselineValue(category, id, field) {
 function valid(category, field, value) {
   if (!Number.isFinite(value)) return false;
   if (value < 0) return false;
-  if (['efficiency', 'storageUse', 'loadFactor', 'opex', 'losses'].includes(field) &&
+  if (['efficiency', 'storageUse', 'loadFactor', 'opex', 'losses', 'networkLoss'].includes(field) &&
       category !== 'districtHeat' && category !== 'processHeat' && value > 1) return false;
-  if (field === 'losses' && value === 1) return false;
+  if (['losses', 'networkLoss'].includes(field) && value === 1) return false;
   if (['efficiency', 'storageUse', 'loadFactor'].includes(field) && value === 0) return false;
   if (['lifetime', 'hours', 'capacity', 'duration', 'hydrogenMwhPerKg', 'dkkPerEur',
     'districtHours', 'processHours'].includes(field) && value === 0) return false;

@@ -11,7 +11,7 @@ const categories = [
   ['fuelEmissions','Fuel emissions','value:kg CO₂/MWh'],
   ['districtHeat','District heat','efficiency:%,capex:M€/MW,fixed:€/MW/year,variable:€/MWh,aux:%,lifetime:years'],
   ['processHeat','Process heat','efficiency:%,capex:M€/MW,fixed:€/MW/year,variable:€/MWh,aux:%,lifetime:years'],
-  ['danishScenarios','Danish 2030 scenarios','price:DKK/MWh,tariff:DKK/MWh,hours:h/year'],
+  ['danishScenarios','Danish 2030 scenarios','price:DKK/MWh,tariff:DKK/MWh,hours:h/year,networkLoss:fraction'],
   ['defaults','Model assumptions','transmissionKm:km,distributionKm:km,loadFactor:fraction,storageUse:fraction,storageDiscount:fraction,productionDiscount:fraction,heatDiscount:fraction,districtHours:h/year,processHours:h/year,hydrogenMwhPerKg:MWh/kg,dkkPerEur:DKK/€']
 ];
 const esc = value => String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -30,8 +30,10 @@ export function renderInputs(category='electrolysers', query='', year=null) {
       const source=provenance[category]?.[id]?.[actualField];
       const edited=isEdited(category,id,actualField);
       const gridNoCable=category==='transmission' && id.startsWith('AF25 grid reference') && field==='cost';
-      const sourceText=source?`${source.file} · ${source.cell} · ${source.parameter}${source.priceYear?' · price basis '+source.priceYear:''}`:gridNoCable?'Model choice: no dedicated HVDC distance charge for the grid reference; the electricity tariff is accounted for at point 1.':'Hydrogen_calc_tool_17May22_clean.xlsx';
-      const status=edited?'Edited':source?'Source':gridNoCable?'Model':'Workbook';
+      const legacyNoLoss=category==='danishScenarios' && field==='networkLoss' && !id.startsWith('KF26');
+      const modelChoice=gridNoCable||legacyNoLoss;
+      const sourceText=source?`${source.file} · ${source.cell} · ${source.parameter}${source.priceYear?' · price basis '+source.priceYear:''}`:gridNoCable?'Model choice: no dedicated HVDC distance charge for the grid reference; the electricity tariff is accounted for at point 1.':legacyNoLoss?'Model choice: original Excel scenario formula has no explicit network-loss multiplier.':'Hydrogen_calc_tool_17May22_clean.xlsx';
+      const status=edited?'Edited':source?'Source':modelChoice?'Model':'Workbook';
       return `<td><label class="input-cell"><span class="sr-only">${esc(label)} ${esc(title(field))}</span><input type="number" step="any" value="${value??''}" data-input-category="${category}" data-input-id="${esc(id)}" data-input-field="${esc(actualField)}" aria-label="${esc(label)} ${esc(title(field))} (${esc(unit)})"><small class="source ${edited?'edited':source?'catalogue':''}" title="${esc(sourceText)}">${status}</small></label></td>`;
     }).join('');
     const changed=fields.some(([field])=>isEdited(category,id,category==='fuelEmissions'?id:field));

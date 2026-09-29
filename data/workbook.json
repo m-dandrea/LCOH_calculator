@@ -1542,28 +1542,48 @@
       "source": "Offshore (offgrid)",
       "price": 305,
       "tariff": 0,
-      "hours": 4600
+      "hours": 4600,
+      "networkLoss": 0
     },
     {
       "name": "KF21 ongrid",
       "source": "Miks (ongrid) (ingen PtX",
       "price": 109,
       "tariff": 100,
-      "hours": 2915
+      "hours": 2915,
+      "networkLoss": 0
     },
     {
       "name": "KF21 m. øer ongrid",
       "source": "Miks (ongrid) (ingen PtX",
       "price": 89,
       "tariff": 100,
-      "hours": 2961
+      "hours": 2961,
+      "networkLoss": 0
     },
     {
       "name": "Udvidet egenproducent",
       "source": "Landvind og PV (offgrid)",
       "price": 165,
       "tariff": 0,
-      "hours": 4760
+      "hours": 4760,
+      "networkLoss": 0
+    },
+    {
+      "name": "KF26 spot + AF25 grid - DK1",
+      "source": "Grid (DK1)",
+      "price": 641.6130136986301,
+      "tariff": 100,
+      "hours": 2915,
+      "networkLoss": 0.0677
+    },
+    {
+      "name": "KF26 spot + AF25 grid - DK2",
+      "source": "Grid (DK2)",
+      "price": 641.6130136986301,
+      "tariff": 100,
+      "hours": 2915,
+      "networkLoss": 0.0622
     }
   ],
   "defaults": {

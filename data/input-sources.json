@@ -4329,5 +4329,75 @@
         "conversion": 1
       }
     }
+  },
+  "danishScenarios": {
+    "KF26 spot + AF25 grid - DK1": {
+      "price": {
+        "file": "KF26 - Resultater - Tal bag figurer september 2026.xlsx",
+        "cell": "25.1!C4:C8763",
+        "parameter": "Arithmetic mean of 8,760 hourly grid spot prices",
+        "unit": "DKK/MWh",
+        "priceYear": 2026,
+        "conversion": "annual mean"
+      },
+      "networkLoss": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Elforbrug!H6",
+        "parameter": "Whole-grid net-versus-gross loss reference",
+        "unit": "fraction",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "tariff": {
+        "file": "Hydrogen_calc_tool_17May22_clean.xlsx",
+        "cell": "Elomk.!F5",
+        "parameter": "KF21 ongrid TSO tariff fallback",
+        "unit": "DKK/MWh",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "hours": {
+        "file": "Hydrogen_calc_tool_17May22_clean.xlsx",
+        "cell": "Elomk.!G5",
+        "parameter": "KF21 ongrid full-load-hour fallback",
+        "unit": "h/year",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "KF26 spot + AF25 grid - DK2": {
+      "price": {
+        "file": "KF26 - Resultater - Tal bag figurer september 2026.xlsx",
+        "cell": "25.1!C4:C8763",
+        "parameter": "Arithmetic mean of 8,760 hourly grid spot prices",
+        "unit": "DKK/MWh",
+        "priceYear": 2026,
+        "conversion": "annual mean"
+      },
+      "networkLoss": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Elforbrug!H7",
+        "parameter": "Whole-grid net-versus-gross loss reference",
+        "unit": "fraction",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "tariff": {
+        "file": "Hydrogen_calc_tool_17May22_clean.xlsx",
+        "cell": "Elomk.!F5",
+        "parameter": "KF21 ongrid TSO tariff fallback",
+        "unit": "DKK/MWh",
+        "priceYear": null,
+        "conversion": 1
+      },
+      "hours": {
+        "file": "Hydrogen_calc_tool_17May22_clean.xlsx",
+        "cell": "Elomk.!G5",
+        "parameter": "KF21 ongrid full-load-hour fallback",
+        "unit": "h/year",
+        "priceYear": null,
+        "conversion": 1
+      }
+    }
   }
 }

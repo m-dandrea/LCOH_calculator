@@ -100,6 +100,31 @@ for name, row in [('AF25 grid reference - DK1', 6), ('AF25 grid reference - DK2'
            'Whole-grid loss share (gross versus net demand), not HVDC cable loss',
            'fraction', None)
 data['defaults']['transmission'] = 'AF25 grid reference - DK1'
+
+# Keep all four original Elomk. cases. Add grid scenarios with the KF26 spot
+# mean, AF25 grid-loss references, and the original KF21 grid case's TSO tariff
+# and full-load hours as disclosed fallbacks. KF26 has hourly prices but no
+# electrolyser dispatch optimisation, so its annual spot mean does not imply
+# a new full-load-hour figure.
+original_grid = next(r for r in data['danishScenarios'] if r['name'] == 'KF21 ongrid')
+spot_2030_dkk = mean([row[0] for row in hourly])
+for item in data['danishScenarios']:
+    item.setdefault('networkLoss', 0)
+for name, zone, loss_row in [('KF26 spot + AF25 grid - DK1', 'DK1', 6),
+                             ('KF26 spot + AF25 grid - DK2', 'DK2', 7)]:
+    item = {'name': name, 'source': f'Grid ({zone})',
+            'price': spot_2030_dkk,
+            'tariff': original_grid['tariff'], 'hours': original_grid['hours'],
+            'networkLoss': grid_demand[f'H{loss_row}'].value}
+    data['danishScenarios'] = [r for r in data['danishScenarios'] if r['name'] != name] + [item]
+    source('danishScenarios', name, 'price', kf_name, '25.1!C4:C8763',
+           'Arithmetic mean of 8,760 hourly grid spot prices', 'DKK/MWh', 2026, 'annual mean')
+    source('danishScenarios', name, 'networkLoss', af_name, f'Elforbrug!H{loss_row}',
+           'Whole-grid net-versus-gross loss reference', 'fraction', None)
+    for field, cell, parameter in [('tariff', 'F5', 'KF21 ongrid TSO tariff fallback'),
+                                    ('hours', 'G5', 'KF21 ongrid full-load-hour fallback')]:
+        source('danishScenarios', name, field, 'Hydrogen_calc_tool_17May22_clean.xlsx',
+               f'Elomk.!{cell}', parameter, 'DKK/MWh' if field == 'tariff' else 'h/year', None)
 DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 SOURCES.write_text(json.dumps(sources, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-print('Updated AF25 fuel, allowance and grid-loss scenarios, KF26 spot-price options, and 2030 defaults')
+print('Updated AF25/KF26 hydrogen and grid scenarios, fuels, allowances, and 2030 defaults')
