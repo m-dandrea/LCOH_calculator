@@ -122,7 +122,6 @@ function filterRows() {
 root.addEventListener('input', event=>{if(event.target.id==='input-search'){inputQuery=event.target.value;filterRows();root.querySelector('#input-charts').innerHTML=renderCharts(inputCategory,inputQuery,chartYear);}});
 root.addEventListener('click', event => {
   const target=event.target;
-  if(target.id==='jump-charts'){root.querySelector('#input-charts')?.scrollIntoView({behavior:'smooth',block:'start'});return;}
   if(target.id==='reset'){Object.assign(state,defaults);edits={};render();}
   if(target.id==='reset-inputs'){resetAllInputs();Object.assign(state,defaults);edits={};render();}
   if(target.dataset.resetCategory){resetInput(target.dataset.resetCategory,target.dataset.resetId);Object.assign(state,defaults);edits={};render();}
