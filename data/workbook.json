@@ -1,0 +1,1510 @@
+{
+  "electricity": [
+    {
+      "name": "Offgrid offshore wind, w/ island",
+      "price": 40.93959731543624,
+      "tariff": 0,
+      "emissions": 5
+    },
+    {
+      "name": "El grid, no PtX nor island",
+      "price": 14.630872483221475,
+      "tariff": 13.422818791946309,
+      "emissions": 100
+    },
+    {
+      "name": "El grid, no PtX , w/ island",
+      "price": 11.946308724832214,
+      "tariff": 13.422818791946309,
+      "emissions": 5
+    },
+    {
+      "name": "Offgrid onshore wind and PV",
+      "price": 22.14765100671141,
+      "tariff": 0,
+      "emissions": 10
+    }
+  ],
+  "carbon": [
+    {
+      "name": "No tax ",
+      "year": null,
+      "price": 0
+    },
+    {
+      "name": "1 - 2022 (low)",
+      "year": 2022,
+      "price": 60
+    },
+    {
+      "name": "2 - 2022 (mid)",
+      "year": 2022,
+      "price": 70
+    },
+    {
+      "name": "3 - 2022 (high)",
+      "year": 2022,
+      "price": 80
+    },
+    {
+      "name": "4 - 2030",
+      "year": 2030,
+      "price": 100
+    },
+    {
+      "name": "IEA Advanced Economies with Net Zero Pledges - 2030",
+      "year": 2030,
+      "price": 120
+    },
+    {
+      "name": "IEA Advanced Economies with Net Zero Pledges - 2040",
+      "year": 2040,
+      "price": 170
+    },
+    {
+      "name": "IEA Advanced Economies with Net Zero Pledges - 2050",
+      "year": 2050,
+      "price": 200
+    },
+    {
+      "name": "IEA Net Zero by 2050 - 2030",
+      "year": 2030,
+      "price": 130
+    },
+    {
+      "name": "IEA Net Zero by 2050 - 2040",
+      "year": 2040,
+      "price": 205
+    },
+    {
+      "name": "IEA Net Zero by 2050 - 2050",
+      "year": 2050,
+      "price": 250
+    }
+  ],
+  "electrolysers": [
+    {
+      "name": "Alkaline 100 MW - 2020",
+      "year": 2020,
+      "capex": 650,
+      "opex": 0.02,
+      "efficiency": 0.665,
+      "heat": 0.18389138913891387,
+      "lifetime": 25,
+      "hours": 4600
+    },
+    {
+      "name": "Alkaline 100 MW - 2030",
+      "year": 2030,
+      "capex": 450,
+      "opex": 0.02,
+      "efficiency": 0.68,
+      "heat": 0.16615961596159623,
+      "lifetime": 30,
+      "hours": 4600
+    },
+    {
+      "name": "Alkaline 100 MW - 2040",
+      "year": 2040,
+      "capex": 300,
+      "opex": 0.02,
+      "efficiency": 0.715,
+      "heat": 0.12478547854785489,
+      "lifetime": 32,
+      "hours": 4600
+    },
+    {
+      "name": "Alkaline 100 MW - 2050",
+      "year": 2050,
+      "capex": 250,
+      "opex": 0.02,
+      "efficiency": 0.75,
+      "heat": 0.08341134113411343,
+      "lifetime": 35,
+      "hours": 4600
+    },
+    {
+      "name": "PEM 100 MW - 2020",
+      "year": 2020,
+      "capex": 925,
+      "opex": 0.04,
+      "efficiency": 0.58,
+      "heat": 0.28437143714371443,
+      "lifetime": 20,
+      "hours": 4000
+    },
+    {
+      "name": "PEM 100 MW - 2030",
+      "year": 2030,
+      "capex": 650,
+      "opex": 0.04,
+      "efficiency": 0.655,
+      "heat": 0.19571257125712563,
+      "lifetime": 25,
+      "hours": 4000
+    },
+    {
+      "name": "PEM 100 MW - 2040",
+      "year": 2040,
+      "capex": 450,
+      "opex": 0.04,
+      "efficiency": 0.68,
+      "heat": 0.16615961596159623,
+      "lifetime": 28,
+      "hours": 4000
+    },
+    {
+      "name": "PEM 100 MW - 2050",
+      "year": 2050,
+      "capex": 400,
+      "opex": 0.04,
+      "efficiency": 0.705,
+      "heat": 0.1366066606660668,
+      "lifetime": 30,
+      "hours": 4000
+    },
+    {
+      "name": "SOEC 1 MW - 2020",
+      "year": 2020,
+      "capex": 4490.566037735849,
+      "opex": 0.12,
+      "efficiency": 0.775,
+      "heat": 0,
+      "lifetime": 10,
+      "hours": 4000
+    },
+    {
+      "name": "SOEC 1 MW - 2030",
+      "year": 2030,
+      "capex": 1900.6211180124224,
+      "opex": 0.12,
+      "efficiency": 0.805,
+      "heat": 0,
+      "lifetime": 20,
+      "hours": 4000
+    },
+    {
+      "name": "SOEC 1 MW - 2040",
+      "year": 2040,
+      "capex": 1341.8953255909778,
+      "opex": 0.12,
+      "efficiency": 0.82,
+      "heat": 0,
+      "lifetime": 20,
+      "hours": 4000
+    },
+    {
+      "name": "SOEC 1 MW - 2050",
+      "year": 2050,
+      "capex": 783.1695331695331,
+      "opex": 0.12,
+      "efficiency": 0.835,
+      "heat": 0,
+      "lifetime": 20,
+      "hours": 4000
+    }
+  ],
+  "storage": [
+    {
+      "name": "Tanks -2020",
+      "year": 2020,
+      "capex": 0.0057,
+      "fixed": 5.7e-05,
+      "variable": 0,
+      "efficiency": 0.8828762720942689,
+      "lifetime": 25,
+      "capacity": 0.095,
+      "duration": 16.7
+    },
+    {
+      "name": "Tanks -2030",
+      "year": 2030,
+      "capex": 0.004491,
+      "fixed": 4.491e-05,
+      "variable": 0,
+      "efficiency": 0.8896222342147868,
+      "lifetime": 30,
+      "capacity": 0.09000000000000001,
+      "duration": 16.7
+    },
+    {
+      "name": "Tanks -2040",
+      "year": 2040,
+      "capex": 0.00270504,
+      "fixed": 2.70504e-05,
+      "variable": 0,
+      "efficiency": 0.8964709081022295,
+      "lifetime": 30,
+      "capacity": 0.08000000000000002,
+      "duration": 16.7
+    },
+    {
+      "name": "Tanks -2050",
+      "year": 2050,
+      "capex": 0.0021,
+      "fixed": 2.1e-05,
+      "variable": 0,
+      "efficiency": 0.9024247400109469,
+      "lifetime": 30,
+      "capacity": 0.08000000000000002,
+      "duration": 16.7
+    },
+    {
+      "name": "LOHC -2020",
+      "year": 2020,
+      "capex": 0.00084,
+      "fixed": 3.3600000000000004e-05,
+      "variable": 8.400000000000001e-06,
+      "efficiency": 0.72,
+      "lifetime": 20,
+      "capacity": 7,
+      "duration": 7
+    },
+    {
+      "name": "LOHC -2030",
+      "year": 2030,
+      "capex": 0.0005,
+      "fixed": 2e-05,
+      "variable": 5e-06,
+      "efficiency": 0.74,
+      "lifetime": 20,
+      "capacity": 34,
+      "duration": 7
+    },
+    {
+      "name": "LOHC -2040",
+      "year": 2040,
+      "capex": 0.00045,
+      "fixed": 1.8e-05,
+      "variable": 4.5e-06,
+      "efficiency": 0.75,
+      "lifetime": 20,
+      "capacity": 70,
+      "duration": 7
+    },
+    {
+      "name": "LOHC -2050",
+      "year": 2050,
+      "capex": 0.00039999999999999996,
+      "fixed": 1.6000000000000003e-05,
+      "variable": 4.000000000000001e-06,
+      "efficiency": 0.75,
+      "lifetime": 20,
+      "capacity": 300,
+      "duration": 7
+    },
+    {
+      "name": "Caverns -2020",
+      "year": 2020,
+      "capex": 0.003,
+      "fixed": 6e-05,
+      "variable": 3e-05,
+      "efficiency": 0.99,
+      "lifetime": 100,
+      "capacity": 175,
+      "duration": 150000
+    },
+    {
+      "name": "Caverns -2030",
+      "year": 2030,
+      "capex": 0.002,
+      "fixed": 4e-05,
+      "variable": 2e-05,
+      "efficiency": 0.99,
+      "lifetime": 100,
+      "capacity": 170,
+      "duration": 150000
+    },
+    {
+      "name": "Caverns -2040",
+      "year": 2040,
+      "capex": 0.0015,
+      "fixed": 3e-05,
+      "variable": 1.5e-05,
+      "efficiency": 0.99,
+      "lifetime": 100,
+      "capacity": 150,
+      "duration": 150000
+    },
+    {
+      "name": "Caverns -2050",
+      "year": 2050,
+      "capex": 0.0012,
+      "fixed": 2.3999999999999997e-05,
+      "variable": 1.1999999999999999e-05,
+      "efficiency": 0.99,
+      "lifetime": 100,
+      "capacity": 150,
+      "duration": 150000
+    }
+  ],
+  "distribution": [
+    {
+      "name": "Filling",
+      "fixed": null,
+      "variable": null,
+      "losses": null,
+      "levelised": null
+    },
+    {
+      "name": "Truck",
+      "fixed": 132,
+      "variable": 2.6,
+      "losses": 0,
+      "levelised": null
+    },
+    {
+      "name": "Pipeline 4 inch",
+      "fixed": null,
+      "variable": null,
+      "losses": null,
+      "levelised": null
+    },
+    {
+      "name": "EU H2 Backbone - Low",
+      "fixed": null,
+      "variable": null,
+      "losses": null,
+      "levelised": 0.09
+    },
+    {
+      "name": "EU H2 Backbone - Medium",
+      "fixed": null,
+      "variable": null,
+      "losses": null,
+      "levelised": 0.13
+    },
+    {
+      "name": "EU H2 Backbone - High",
+      "fixed": null,
+      "variable": null,
+      "losses": null,
+      "levelised": 0.17
+    }
+  ],
+  "fuelPrices": [
+    {
+      "year": 2019,
+      "gas": 53.94529046338949,
+      "coal": 23.406929880021178,
+      "diesel": 93.42028505827741,
+      "wood": 65.82184043373893
+    },
+    {
+      "year": 2020,
+      "gas": 48.049648253621314,
+      "coal": 22.320750500826144,
+      "diesel": 95.47127745113359,
+      "wood": 65.0477674299182
+    },
+    {
+      "year": 2021,
+      "gas": 40.610335042675715,
+      "coal": 22.41523377928027,
+      "diesel": 97.24118203186934,
+      "wood": 64.8356087151102
+    },
+    {
+      "year": 2022,
+      "gas": 40.25130242895436,
+      "coal": 21.958696459631067,
+      "diesel": 98.82884327532042,
+      "wood": 64.69720882383064
+    },
+    {
+      "year": 2023,
+      "gas": 41.309391764519106,
+      "coal": 21.26478122527793,
+      "diesel": 100.56346193653435,
+      "wood": 64.59290976534399
+    },
+    {
+      "year": 2024,
+      "gas": 42.38410592991225,
+      "coal": 20.867962592605565,
+      "diesel": 102.25272819996498,
+      "wood": 64.53189247153136
+    },
+    {
+      "year": 2025,
+      "gas": 43.418156429745736,
+      "coal": 20.782407107600484,
+      "diesel": 103.59292392409625,
+      "wood": 64.46433955872025
+    },
+    {
+      "year": 2026,
+      "gas": 44.6410319280737,
+      "coal": 20.9954452442969,
+      "diesel": 106.21638916040223,
+      "wood": 64.71001554984082
+    },
+    {
+      "year": 2027,
+      "gas": 45.82508571699009,
+      "coal": 21.19593184399543,
+      "diesel": 107.72588912251153,
+      "wood": 64.95530443785226
+    },
+    {
+      "year": 2028,
+      "gas": 46.95029465108016,
+      "coal": 21.376250794374826,
+      "diesel": 109.12617407519895,
+      "wood": 65.20019498564177
+    },
+    {
+      "year": 2029,
+      "gas": 48.04798427144904,
+      "coal": 21.548170886437006,
+      "diesel": 110.46785470551812,
+      "wood": 65.44467605549433
+    },
+    {
+      "year": 2030,
+      "gas": 49.07472948414125,
+      "coal": 21.695318201462513,
+      "diesel": 111.68120496154094,
+      "wood": 65.68873660835527
+    },
+    {
+      "year": 2031,
+      "gas": 50.22027708112531,
+      "coal": 21.767199086953433,
+      "diesel": 113.23256834032486,
+      "wood": 65.88459663386016
+    },
+    {
+      "year": 2032,
+      "gas": 51.31043778357271,
+      "coal": 21.82501703014873,
+      "diesel": 115.09814663558544,
+      "wood": 66.08036338926722
+    },
+    {
+      "year": 2033,
+      "gas": 52.371455269436716,
+      "coal": 21.878276139633737,
+      "diesel": 116.88086581555098,
+      "wood": 66.2760216033575
+    },
+    {
+      "year": 2034,
+      "gas": 53.37948737830529,
+      "coal": 21.917992887383534,
+      "diesel": 118.54251133000847,
+      "wood": 66.4715561389021
+    },
+    {
+      "year": 2035,
+      "gas": 54.36664643221356,
+      "coal": 21.9556878669204,
+      "diesel": 120.13781262635041,
+      "wood": 66.66695199165018
+    },
+    {
+      "year": 2036,
+      "gas": 56.02156647804387,
+      "coal": 22.029714738820417,
+      "diesel": 121.63001908054615,
+      "wood": 66.82969482873096
+    },
+    {
+      "year": 2037,
+      "gas": 56.643484305507364,
+      "coal": 22.099296654325173,
+      "diesel": 123.07584641154446,
+      "wood": 66.9920746650359
+    },
+    {
+      "year": 2038,
+      "gas": 57.20629248267502,
+      "coal": 22.153632116105896,
+      "diesel": 124.40630112502366,
+      "wood": 67.1540823234905
+    },
+    {
+      "year": 2039,
+      "gas": 57.740541471904386,
+      "coal": 22.203402762241502,
+      "diesel": 125.67385890415208,
+      "wood": 67.31570870687413
+    },
+    {
+      "year": 2040,
+      "gas": 58.226230553747364,
+      "coal": 22.241349337329673,
+      "diesel": 126.84484486715562,
+      "wood": 67.47694479728085
+    },
+    {
+      "year": 2041,
+      "gas": 58.81953865371656,
+      "coal": 22.303691713245,
+      "diesel": 128.2344732974325,
+      "wood": 67.6391412579639
+    },
+    {
+      "year": 2042,
+      "gas": 59.37017718549714,
+      "coal": 22.35642924373849,
+      "diesel": 129.53723970401506,
+      "wood": 67.80095465585771
+    },
+    {
+      "year": 2043,
+      "gas": 59.92081571727749,
+      "coal": 22.409166774231963,
+      "diesel": 130.84000611059764,
+      "wood": 67.96276805375152
+    },
+    {
+      "year": 2044,
+      "gas": 60.47145424905784,
+      "coal": 22.46190430472545,
+      "diesel": 132.14277251718022,
+      "wood": 68.12458145164533
+    },
+    {
+      "year": 2045,
+      "gas": 61.02209278083819,
+      "coal": 22.51464183521894,
+      "diesel": 133.4455389237628,
+      "wood": 68.28639484953908
+    },
+    {
+      "year": 2046,
+      "gas": 61.57273131261877,
+      "coal": 22.567379365712412,
+      "diesel": 134.74830533034583,
+      "wood": 68.44820824743289
+    },
+    {
+      "year": 2047,
+      "gas": 62.12336984439912,
+      "coal": 22.6201168962059,
+      "diesel": 136.0510717369284,
+      "wood": 68.6100216453267
+    },
+    {
+      "year": 2048,
+      "gas": 62.67400837617947,
+      "coal": 22.672854426699388,
+      "diesel": 137.35383814351098,
+      "wood": 68.7718350432205
+    },
+    {
+      "year": 2049,
+      "gas": 63.22464690795982,
+      "coal": 22.725591957192876,
+      "diesel": 138.65660455009356,
+      "wood": 68.93364844111431
+    },
+    {
+      "year": 2050,
+      "gas": 63.77528543974017,
+      "coal": 22.778329487686364,
+      "diesel": 139.95937095667614,
+      "wood": 69.09546183900812
+    }
+  ],
+  "fuelEmissions": {
+    "gas": 0.199872,
+    "coal": 0.33886799999999995,
+    "diesel": 0.26676,
+    "wood": 0
+  },
+  "districtHeat": [
+    {
+      "name": "40 Comp. hp, airsource 1 MW",
+      "year": 2020,
+      "efficiency": 290,
+      "capex": 1.427077901177547,
+      "fixed": 2000,
+      "variable": 2.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 1 MW",
+      "year": 2025,
+      "efficiency": 295,
+      "capex": 1.427077901177547,
+      "fixed": 2000,
+      "variable": 2.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 1 MW",
+      "year": 2030,
+      "efficiency": 300,
+      "capex": 1.331939374432377,
+      "fixed": 2000,
+      "variable": 2.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 1 MW",
+      "year": 2040,
+      "efficiency": 310,
+      "capex": 1.331939374432377,
+      "fixed": 2000,
+      "variable": 2.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 1 MW",
+      "year": 2050,
+      "efficiency": 315,
+      "capex": 1.331939374432377,
+      "fixed": 2000,
+      "variable": 2.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 3 MW",
+      "year": 2020,
+      "efficiency": 340,
+      "capex": 0.9513852674516979,
+      "fixed": 2000,
+      "variable": 2.19,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 3 MW",
+      "year": 2025,
+      "efficiency": 350,
+      "capex": 0.9513852674516979,
+      "fixed": 2000,
+      "variable": 2.19,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 3 MW",
+      "year": 2030,
+      "efficiency": 360,
+      "capex": 0.8562467407065282,
+      "fixed": 2000,
+      "variable": 2.51,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 3 MW",
+      "year": 2040,
+      "efficiency": 365,
+      "capex": 0.8562467407065282,
+      "fixed": 2000,
+      "variable": 2.19,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 3 MW",
+      "year": 2050,
+      "efficiency": 370,
+      "capex": 0.8562467407065282,
+      "fixed": 2000,
+      "variable": 2.67,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 10 MW",
+      "year": 2020,
+      "efficiency": 380,
+      "capex": 0.8562467407065282,
+      "fixed": 2000,
+      "variable": 1.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 10 MW",
+      "year": 2025,
+      "efficiency": 380,
+      "capex": 0.8562467407065282,
+      "fixed": 2000,
+      "variable": 1.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 10 MW",
+      "year": 2030,
+      "efficiency": 385,
+      "capex": 0.7611082139613584,
+      "fixed": 2000,
+      "variable": 1.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 10 MW",
+      "year": 2040,
+      "efficiency": 390,
+      "capex": 0.7611082139613584,
+      "fixed": 2000,
+      "variable": 1.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, airsource 10 MW",
+      "year": 2050,
+      "efficiency": 390,
+      "capex": 0.7611082139613584,
+      "fixed": 2000,
+      "variable": 1.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 1 MW",
+      "year": 2020,
+      "efficiency": 410,
+      "capex": 1.2368008476872074,
+      "fixed": 2000,
+      "variable": 2.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 1 MW",
+      "year": 2025,
+      "efficiency": 420,
+      "capex": 1.2368008476872074,
+      "fixed": 2000,
+      "variable": 2.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 1 MW",
+      "year": 2030,
+      "efficiency": 430,
+      "capex": 1.1416623209420376,
+      "fixed": 2000,
+      "variable": 2.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 1 MW",
+      "year": 2040,
+      "efficiency": 440,
+      "capex": 1.1416623209420376,
+      "fixed": 2000,
+      "variable": 3.09,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 1 MW",
+      "year": 2050,
+      "efficiency": 450,
+      "capex": 1.1416623209420376,
+      "fixed": 2000,
+      "variable": 3.17,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 3 MW",
+      "year": 2020,
+      "efficiency": 460,
+      "capex": 0.8562467407065282,
+      "fixed": 2000,
+      "variable": 2.19,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 3 MW",
+      "year": 2025,
+      "efficiency": 470,
+      "capex": 0.8562467407065282,
+      "fixed": 2000,
+      "variable": 2.19,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 3 MW",
+      "year": 2030,
+      "efficiency": 480,
+      "capex": 0.7611082139613584,
+      "fixed": 2000,
+      "variable": 2.51,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 3 MW",
+      "year": 2040,
+      "efficiency": 490,
+      "capex": 0.7611082139613584,
+      "fixed": 2000,
+      "variable": 2.19,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 3 MW",
+      "year": 2050,
+      "efficiency": 500,
+      "capex": 0.7611082139613584,
+      "fixed": 2000,
+      "variable": 2.67,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 10 MW",
+      "year": 2020,
+      "efficiency": 510,
+      "capex": 0.6659696872161885,
+      "fixed": 2000,
+      "variable": 1.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 10 MW",
+      "year": 2025,
+      "efficiency": 520,
+      "capex": 0.6659696872161885,
+      "fixed": 2000,
+      "variable": 1.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 10 MW",
+      "year": 2030,
+      "efficiency": 530,
+      "capex": 0.5708311604710188,
+      "fixed": 2000,
+      "variable": 2.01,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 10 MW",
+      "year": 2040,
+      "efficiency": 540,
+      "capex": 0.5708311604710188,
+      "fixed": 2000,
+      "variable": 2.09,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, excess heat 10 MW",
+      "year": 2050,
+      "efficiency": 550,
+      "capex": 0.5708311604710188,
+      "fixed": 2000,
+      "variable": 1.69,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, seawater 20 MW",
+      "year": 2020,
+      "efficiency": 370,
+      "capex": 0.47569263372584897,
+      "fixed": 4000,
+      "variable": 1.19,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, seawater 20 MW",
+      "year": 2025,
+      "efficiency": 370,
+      "capex": 0.47569263372584897,
+      "fixed": 4000,
+      "variable": 1.19,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, seawater 20 MW",
+      "year": 2030,
+      "efficiency": 370,
+      "capex": 0.3805541069806792,
+      "fixed": 4000,
+      "variable": 1.51,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, seawater 20 MW",
+      "year": 2040,
+      "efficiency": 380,
+      "capex": 0.3805541069806792,
+      "fixed": 4000,
+      "variable": 1.59,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "40 Comp. hp, seawater 20 MW",
+      "year": 2050,
+      "efficiency": 380,
+      "capex": 0.3805541069806792,
+      "fixed": 4000,
+      "variable": 1.67,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "41 Electric Boilers 1-5 MW",
+      "year": 2020,
+      "efficiency": 99,
+      "capex": 0.15,
+      "fixed": 1070,
+      "variable": 0.5,
+      "aux": 0.5,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "41 Electric Boilers 1-5 MW",
+      "year": 2030,
+      "efficiency": 99,
+      "capex": 0.14,
+      "fixed": 1020,
+      "variable": 0.5,
+      "aux": 0.5,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "41 Electric Boilers 1-5 MW",
+      "year": 2050,
+      "efficiency": 99,
+      "capex": 0.13,
+      "fixed": 920,
+      "variable": 0.4,
+      "aux": 0.5,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "41 Electric Boilers >10 MW",
+      "year": 2020,
+      "efficiency": 99,
+      "capex": 0.07,
+      "fixed": 1070,
+      "variable": 0.5,
+      "aux": 0.5,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "41 Electric Boilers >10 MW",
+      "year": 2030,
+      "efficiency": 99,
+      "capex": 0.06,
+      "fixed": 1020,
+      "variable": 0.5,
+      "aux": 0.5,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "41 Electric Boilers >10 MW",
+      "year": 2050,
+      "efficiency": 99,
+      "capex": 0.06,
+      "fixed": 920,
+      "variable": 0.4,
+      "aux": 0.5,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "44 Natural Gas DH Only",
+      "year": 2020,
+      "efficiency": 103,
+      "capex": 0.06,
+      "fixed": 1950,
+      "variable": 1,
+      "aux": 0.14,
+      "lifetime": 25,
+      "fuel": "Natural gas"
+    },
+    {
+      "name": "44 Natural Gas DH Only",
+      "year": 2030,
+      "efficiency": 104,
+      "capex": 0.05,
+      "fixed": 1900,
+      "variable": 0.9,
+      "aux": 0.12,
+      "lifetime": 25,
+      "fuel": "Natural gas"
+    },
+    {
+      "name": "44 Natural Gas DH Only",
+      "year": 2050,
+      "efficiency": 104,
+      "capex": 0.05,
+      "fixed": 1700,
+      "variable": 0.9,
+      "aux": 0.1,
+      "lifetime": 25,
+      "fuel": "Natural gas"
+    },
+    {
+      "name": "40 Absorption heat pump, DH",
+      "year": 2020,
+      "efficiency": 171,
+      "capex": 0.564,
+      "fixed": 2000,
+      "variable": 0.282,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "High T source"
+    },
+    {
+      "name": "40 Absorption heat pump, DH",
+      "year": 2030,
+      "efficiency": 173,
+      "capex": 0.5075999999999999,
+      "fixed": 2000,
+      "variable": 0.25379999999999997,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "High T source"
+    },
+    {
+      "name": "40 Absorption heat pump, DH",
+      "year": 2050,
+      "efficiency": 175,
+      "capex": 0.45683999999999997,
+      "fixed": 2000,
+      "variable": 0.22841999999999998,
+      "aux": 1,
+      "lifetime": 25,
+      "fuel": "High T source"
+    }
+  ],
+  "processHeat": [
+    {
+      "name": "302.b High temp. hp Up to 150",
+      "year": 2020,
+      "efficiency": 295,
+      "capex": 1.0454400000000001,
+      "fixed": 970,
+      "variable": 1.8,
+      "aux": 2,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "302.b High temp. hp Up to 150",
+      "year": 2030,
+      "efficiency": 305,
+      "capex": 0.9345600000000002,
+      "fixed": 870,
+      "variable": 1.7,
+      "aux": 2,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "302.b High temp. hp Up to 150",
+      "year": 2040,
+      "efficiency": 315,
+      "capex": 0.8760000000000001,
+      "fixed": 800,
+      "variable": 1.7,
+      "aux": 2,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "302.b High temp. hp Up to 150",
+      "year": 2050,
+      "efficiency": 320,
+      "capex": 0.8400000000000001,
+      "fixed": 720,
+      "variable": 1.6,
+      "aux": 2,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "303 Booster hp 150 C 130 K",
+      "year": 2020,
+      "efficiency": 193,
+      "capex": 1.6320658640726422,
+      "fixed": 2000,
+      "variable": 1.9800000000000002,
+      "aux": 2,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "303 Booster hp 150 C 130 K",
+      "year": 2030,
+      "efficiency": 198.94,
+      "capex": 1.323094485099782,
+      "fixed": 2000,
+      "variable": 1.87,
+      "aux": 2,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "303 Booster hp 150 C 130 K",
+      "year": 2040,
+      "efficiency": 203.0188,
+      "capex": 1.0369854809541614,
+      "fixed": 2000,
+      "variable": 1.815,
+      "aux": 2,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "303 Booster hp 150 C 130 K",
+      "year": 2050,
+      "efficiency": 205.098988,
+      "capex": 0.9336825985817748,
+      "fixed": 2000,
+      "variable": 1.7600000000000002,
+      "aux": 2,
+      "lifetime": 20,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "310.1 Electric boiler steam  ",
+      "year": 2020,
+      "efficiency": 99,
+      "capex": 0.08,
+      "fixed": 1070,
+      "variable": 0.5,
+      "aux": 0.5,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "310.1 Electric boiler steam  ",
+      "year": 2030,
+      "efficiency": 99,
+      "capex": 0.07,
+      "fixed": 1020,
+      "variable": 0.5,
+      "aux": 0.5,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "310.1 Electric boiler steam  ",
+      "year": 2040,
+      "efficiency": 99,
+      "capex": 0.07,
+      "fixed": 970,
+      "variable": 0.4,
+      "aux": 0.5,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "310.1 Electric boiler steam  ",
+      "year": 2050,
+      "efficiency": 99,
+      "capex": 0.07,
+      "fixed": 920,
+      "variable": 0.4,
+      "aux": 0.5,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "310.2 Electric boiler hot water",
+      "year": 2020,
+      "efficiency": 99,
+      "capex": 0.07,
+      "fixed": 1070,
+      "variable": 0.5,
+      "aux": 0.5,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "310.2 Electric boiler hot water",
+      "year": 2030,
+      "efficiency": 99,
+      "capex": 0.06,
+      "fixed": 1020,
+      "variable": 0.5,
+      "aux": 0.5,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "310.2 Electric boiler hot water",
+      "year": 2040,
+      "efficiency": 99,
+      "capex": 0.06,
+      "fixed": 970,
+      "variable": 0.4,
+      "aux": 0.5,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "310.2 Electric boiler hot water",
+      "year": 2050,
+      "efficiency": 99,
+      "capex": 0.06,
+      "fixed": 920,
+      "variable": 0.4,
+      "aux": 0.5,
+      "lifetime": 25,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "311.2c Hot water boiler Gas",
+      "year": 2020,
+      "efficiency": 93,
+      "capex": 0.04363636363636363,
+      "fixed": 2000,
+      "variable": 0.9978,
+      "aux": 0.14,
+      "lifetime": 25,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "311.2c Hot water boiler Gas",
+      "year": 2030,
+      "efficiency": 94,
+      "capex": 0.03636363636363637,
+      "fixed": 1900,
+      "variable": 0.91,
+      "aux": 0.12,
+      "lifetime": 25,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "311.2c Hot water boiler Gas",
+      "year": 2040,
+      "efficiency": 94,
+      "capex": 0.03636363636363637,
+      "fixed": 1800,
+      "variable": 0.9164,
+      "aux": 0.11,
+      "lifetime": 25,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "311.2c Hot water boiler Gas",
+      "year": 2050,
+      "efficiency": 95,
+      "capex": 0.03636363636363637,
+      "fixed": 1700,
+      "variable": 0.924,
+      "aux": 0.1,
+      "lifetime": 25,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "311.d Hot water boiler Gas cond",
+      "year": 2020,
+      "efficiency": 101,
+      "capex": 0.048,
+      "fixed": 2000,
+      "variable": 0.9978,
+      "aux": 0.14,
+      "lifetime": 25,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "311.d Hot water boiler Gas cond",
+      "year": 2030,
+      "efficiency": 103,
+      "capex": 0.04000000000000001,
+      "fixed": 1900,
+      "variable": 0.91,
+      "aux": 0.12,
+      "lifetime": 25,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "311.d Hot water boiler Gas cond",
+      "year": 2040,
+      "efficiency": 103,
+      "capex": 0.04000000000000001,
+      "fixed": 1800,
+      "variable": 0.9164,
+      "aux": 0.11,
+      "lifetime": 25,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "311.d Hot water boiler Gas cond",
+      "year": 2050,
+      "efficiency": 103,
+      "capex": 0.04000000000000001,
+      "fixed": 1700,
+      "variable": 0.924,
+      "aux": 0.1,
+      "lifetime": 25,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "312.a Direct firing Natural Gas",
+      "year": 2020,
+      "efficiency": 100,
+      "capex": 0.015,
+      "fixed": 181.8181818181818,
+      "variable": 0.1,
+      "aux": 0.25,
+      "lifetime": 15,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "312.a Direct firing Natural Gas",
+      "year": 2030,
+      "efficiency": 100,
+      "capex": 0.015,
+      "fixed": 177.27272727272725,
+      "variable": 0.09000000000000001,
+      "aux": 0.25,
+      "lifetime": 15,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "312.a Direct firing Natural Gas",
+      "year": 2040,
+      "efficiency": 100,
+      "capex": 0.015,
+      "fixed": 172.72727272727272,
+      "variable": 0.09000000000000001,
+      "aux": 0.25,
+      "lifetime": 15,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "312.a Direct firing Natural Gas",
+      "year": 2050,
+      "efficiency": 100,
+      "capex": 0.015,
+      "fixed": 154.54545454545453,
+      "variable": 0.09000000000000001,
+      "aux": 0.25,
+      "lifetime": 15,
+      "fuel": "Natural Gas"
+    },
+    {
+      "name": "312.c Direct firing Electricity",
+      "year": 2020,
+      "efficiency": 100,
+      "capex": 0.06,
+      "fixed": 0,
+      "variable": 0,
+      "aux": 0.25,
+      "lifetime": 12.5,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "312.c Direct firing Electricity",
+      "year": 2030,
+      "efficiency": 100,
+      "capex": 0.06,
+      "fixed": 0,
+      "variable": 0,
+      "aux": 0.25,
+      "lifetime": 12.5,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "312.c Direct firing Electricity",
+      "year": 2040,
+      "efficiency": 100,
+      "capex": 0.06,
+      "fixed": 0,
+      "variable": 0,
+      "aux": 0.25,
+      "lifetime": 12.5,
+      "fuel": "Electricity"
+    },
+    {
+      "name": "312.c Direct firing Electricity",
+      "year": 2050,
+      "efficiency": 100,
+      "capex": 0.06,
+      "fixed": 0,
+      "variable": 0,
+      "aux": 0.25,
+      "lifetime": 12.5,
+      "fuel": "Electricity"
+    }
+  ],
+  "defaults": {
+    "electricity": "Offgrid offshore wind, w/ island",
+    "carbon": "1 - 2022 (low)",
+    "electrolyser": "Alkaline 100 MW - 2050",
+    "storage": "LOHC -2050",
+    "distribution": "EU H2 Backbone - Medium",
+    "fuelYear": 2050,
+    "heatYear": 2030,
+    "transmissionKm": 500,
+    "distributionKm": 500,
+    "loadFactor": 0.45,
+    "storageUse": 0.3,
+    "storageDiscount": 0.05,
+    "productionDiscount": 0.05,
+    "heatDiscount": 0.05,
+    "districtHours": 1752,
+    "processHours": 7884,
+    "hydrogenMwhPerKg": 0.0394,
+    "dkkPerEur": 7.45
+  }
+}
