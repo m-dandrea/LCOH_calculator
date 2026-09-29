@@ -1,10 +1,12 @@
 import initial from '../data/workbook.json' with { type: 'json' };
 import sources from '../data/input-sources.json' with { type: 'json' };
+import workbookSources from '../data/workbook-provenance.json' with { type: 'json' };
 
 export const baseline = structuredClone(initial);
 export const data = structuredClone(initial);
 export const defaults = data.defaults;
 export const provenance = sources;
+export const workbookProvenance = workbookSources;
 const key = 'lcoh-input-overrides-v1';
 let overrides = {};
 

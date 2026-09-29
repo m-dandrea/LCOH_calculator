@@ -1,4 +1,4 @@
-import {data, provenance, recordId, isEdited} from './input-store.js';
+import {data, provenance, workbookProvenance, recordId, isEdited} from './input-store.js';
 
 const categories = [
   ['electricity','Electricity sources','price:€/MWh,tariff:€/MWh,emissions:kg CO₂/MWh'],
@@ -28,13 +28,14 @@ export function renderInputs(category='electrolysers', query='', year=null) {
       const actualField=category==='fuelEmissions'?id:field;
       const value=row[field];
       const source=provenance[category]?.[id]?.[actualField];
+      const workbookSource=workbookProvenance[category]?.[id]?.[actualField] || workbookProvenance[category]?.[String(id)]?.[actualField];
       const edited=isEdited(category,id,actualField);
       const gridNoCable=category==='transmission' && id.startsWith('AF25 grid reference') && field==='cost';
       const legacyNoLoss=category==='danishScenarios' && field==='networkLoss' && !id.startsWith('KF26');
       const modelChoice=gridNoCable||legacyNoLoss;
-      const sourceText=source?`${source.file} · ${source.cell} · ${source.parameter}${source.priceYear?' · price basis '+source.priceYear:''}`:gridNoCable?'Model choice: no dedicated HVDC distance charge for the grid reference; the electricity tariff is accounted for at point 1.':legacyNoLoss?'Model choice: original Excel scenario formula has no explicit network-loss multiplier.':'Hydrogen_calc_tool_17May22_clean.xlsx';
-      const status=edited?'Edited':source?'Source':modelChoice?'Model':'Workbook';
-      return `<td><label class="input-cell"><span class="sr-only">${esc(label)} ${esc(title(field))}</span><input type="number" step="any" value="${value??''}" data-input-category="${category}" data-input-id="${esc(id)}" data-input-field="${esc(actualField)}" aria-label="${esc(label)} ${esc(title(field))} (${esc(unit)})"><small class="source ${edited?'edited':source?'catalogue':''}" title="${esc(sourceText)}">${status}</small></label></td>`;
+      const sourceText=source?`${source.file} · ${source.cell} · ${source.parameter}${source.priceYear?' · price basis '+source.priceYear:''}`:gridNoCable?'Model choice: no dedicated HVDC distance charge for the grid reference; the electricity tariff is accounted for at point 1.':legacyNoLoss?'Model choice: original Excel scenario formula has no explicit network-loss multiplier.':workbookSource||'Not stated in Excel';
+      const status=edited?'Edited':source?'Source':modelChoice?'Model':workbookSource||'Not stated';
+      return `<td><label class="input-cell"><span class="sr-only">${esc(label)} ${esc(title(field))}</span><input type="number" step="any" value="${value??''}" data-input-category="${category}" data-input-id="${esc(id)}" data-input-field="${esc(actualField)}" aria-label="${esc(label)} ${esc(title(field))} (${esc(unit)})"><small class="source ${edited?'edited':source?'catalogue':''}" title="${esc(sourceText)}">${esc(status)}</small></label></td>`;
     }).join('');
     const changed=fields.some(([field])=>isEdited(category,id,category==='fuelEmissions'?id:field));
     return `<tr data-search="${esc((label+' '+secondary).toLowerCase())}"><th scope="row"><strong>${esc(label)}</strong><small>${esc(secondary)}</small></th>${cells}<td><button class="row-reset" data-reset-category="${category}" data-reset-id="${esc(id)}" ${changed?'':'disabled'}>Reset</button></td></tr>`;
@@ -42,7 +43,7 @@ export function renderInputs(category='electrolysers', query='', year=null) {
   return `<main class="shell inputs-page"><div class="heading"><div><p class="eyebrow">SOURCE DATA</p><h1>Input data</h1><p>Edit the source tables used by the dashboard. Changes recalculate results and stay in this browser.</p></div><button id="reset-inputs" class="reset-inputs">Reset all input data</button></div>
     <section class="inputs-panel"><div class="inputs-toolbar"><label class="field"><span>Input table</span><select id="input-category">${categories.map(([key,label])=>`<option value="${key}" ${key===category?'selected':''}>${label}</option>`).join('')}</select></label><label class="field"><span>Find a row</span><input id="input-search" type="search" value="${esc(query)}" placeholder="Search technology or year"></label></div>
     <div id="input-charts">${renderCharts(category,query,year)}</div>
-    <p class="input-help"><span class="source catalogue">Source</span> updated from a supplied catalogue or forecast · <span class="source">Workbook</span> original Excel value where no matching input was available · Model: a stated calculation choice · <span class="source edited">Edited</span> your local value. Hover over a source label for its file and cell. Published price years are retained; no inflation adjustment was applied. AF25 fuel prices use 2025 DKK/GJ, while unmatched diesel remains at the workbook's 2019 basis.</p>
+    <p class="input-help"><span class="source catalogue">Source</span> updated from a supplied catalogue or forecast · workbook-retained values show the source/comment recorded in the Excel file, including <strong>Guess</strong> where stated · Model: a stated calculation choice · <span class="source edited">Edited</span> your local value. Hover over a label for the full source text. Published price years are retained; no inflation adjustment was applied.</p>
     ${category==='electrolysers'?'<p class="input-help">The main hydrogen production calculation follows the original workbook formula, which uses CAPEX in its O&M term. The OPEX column is retained for the separate Danish scenario calculation.</p>':''}
     <div class="table-wrap inputs-table"><table><thead><tr><th>Record</th>${fields.map(([field,unit])=>`<th>${esc(title(field))}<small>${esc(unit)}</small></th>`).join('')}<th></th></tr></thead><tbody>${body}</tbody></table></div><p id="no-results" hidden>No matching rows.</p></section></main>`;
 }

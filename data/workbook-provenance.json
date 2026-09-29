@@ -1,0 +1,1193 @@
+{
+  "electricity": {
+    "Offgrid offshore wind, w/ island": {
+      "price": "Guess",
+      "tariff": "Guess",
+      "emissions": "Guess"
+    },
+    "El grid, no PtX nor island": {
+      "price": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1",
+      "tariff": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1",
+      "emissions": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+    },
+    "El grid, no PtX , w/ island": {
+      "price": "Guess",
+      "tariff": "Guess",
+      "emissions": "Guess"
+    },
+    "Offgrid onshore wind and PV": {
+      "price": "Guess",
+      "tariff": "Guess",
+      "emissions": "Guess"
+    }
+  },
+  "transmission": {
+    "HVDC": {
+      "losses": "https://ens.dk/sites/ens.dk/files/Analyser/technology_data_for_energy_transport.pdf",
+      "cost": "https://ens.dk/sites/ens.dk/files/Analyser/technology_data_for_energy_transport.pdf"
+    }
+  },
+  "electrolysers": {
+    "Alkaline 100 MW - 2020": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    },
+    "Alkaline 100 MW - 2030": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    },
+    "Alkaline 100 MW - 2040": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    },
+    "Alkaline 100 MW - 2050": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    },
+    "PEM 100 MW - 2020": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    },
+    "PEM 100 MW - 2030": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    },
+    "PEM 100 MW - 2040": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    },
+    "PEM 100 MW - 2050": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    },
+    "SOEC 1 MW - 2020": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    },
+    "SOEC 1 MW - 2030": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    },
+    "SOEC 1 MW - 2040": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    },
+    "SOEC 1 MW - 2050": {
+      "capex": "Not stated in Excel",
+      "opex": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "heat": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "hours": "Not stated in Excel"
+    }
+  },
+  "storage": {
+    "Tanks -2020": {
+      "capex": "Specific investment (M€2015 per MWh)",
+      "fixed": "Specific investment (M€2015 per MWh)",
+      "variable": "Specific investment (M€2015 per MWh)",
+      "efficiency": "Specific investment (M€2015 per MWh)",
+      "lifetime": "Specific investment (M€2015 per MWh)",
+      "capacity": "Specific investment (M€2015 per MWh)",
+      "duration": "Specific investment (M€2015 per MWh)"
+    },
+    "Tanks -2030": {
+      "capex": "Fixed O&M (€2015/MW/year)",
+      "fixed": "Fixed O&M (€2015/MW/year)",
+      "variable": "Fixed O&M (€2015/MW/year)",
+      "efficiency": "Fixed O&M (€2015/MW/year)",
+      "lifetime": "Fixed O&M (€2015/MW/year)",
+      "capacity": "Fixed O&M (€2015/MW/year)",
+      "duration": "Fixed O&M (€2015/MW/year)"
+    },
+    "Tanks -2040": {
+      "capex": "Variable O&M (€2015/MWh)",
+      "fixed": "Variable O&M (€2015/MWh)",
+      "variable": "Variable O&M (€2015/MWh)",
+      "efficiency": "Variable O&M (€2015/MWh)",
+      "lifetime": "Variable O&M (€2015/MWh)",
+      "capacity": "Variable O&M (€2015/MWh)",
+      "duration": "Variable O&M (€2015/MWh)"
+    },
+    "Tanks -2050": {
+      "capex": "Round trip efficiency (%)",
+      "fixed": "Round trip efficiency (%)",
+      "variable": "Round trip efficiency (%)",
+      "efficiency": "Round trip efficiency (%)",
+      "lifetime": "Round trip efficiency (%)",
+      "capacity": "Round trip efficiency (%)",
+      "duration": "Round trip efficiency (%)"
+    },
+    "LOHC -2020": {
+      "capex": "Technical lifetime (years)",
+      "fixed": "Technical lifetime (years)",
+      "variable": "Technical lifetime (years)",
+      "efficiency": "Technical lifetime (years)",
+      "lifetime": "Technical lifetime (years)",
+      "capacity": "Technical lifetime (years)",
+      "duration": "Technical lifetime (years)"
+    },
+    "LOHC -2030": {
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "capacity": "Not stated in Excel",
+      "duration": "Not stated in Excel"
+    },
+    "LOHC -2040": {
+      "capex": "https://en.wikipedia.org/wiki/Liquid_organic_hydrogen_carriers",
+      "fixed": "https://en.wikipedia.org/wiki/Liquid_organic_hydrogen_carriers",
+      "variable": "https://en.wikipedia.org/wiki/Liquid_organic_hydrogen_carriers",
+      "efficiency": "https://en.wikipedia.org/wiki/Liquid_organic_hydrogen_carriers",
+      "lifetime": "https://en.wikipedia.org/wiki/Liquid_organic_hydrogen_carriers",
+      "capacity": "https://en.wikipedia.org/wiki/Liquid_organic_hydrogen_carriers",
+      "duration": "https://en.wikipedia.org/wiki/Liquid_organic_hydrogen_carriers"
+    },
+    "LOHC -2050": {
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "capacity": "Not stated in Excel",
+      "duration": "Not stated in Excel"
+    },
+    "Caverns -2020": {
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "capacity": "Not stated in Excel",
+      "duration": "Not stated in Excel"
+    },
+    "Caverns -2030": {
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "capacity": "Not stated in Excel",
+      "duration": "Not stated in Excel"
+    },
+    "Caverns -2040": {
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "capacity": "Not stated in Excel",
+      "duration": "Not stated in Excel"
+    },
+    "Caverns -2050": {
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "efficiency": "Not stated in Excel",
+      "lifetime": "Not stated in Excel",
+      "capacity": "Not stated in Excel",
+      "duration": "Not stated in Excel"
+    }
+  },
+  "districtHeat": {
+    "40 Comp. hp, airsource 1 MW|2020": {
+      "efficiency": "1",
+      "capex": "1",
+      "fixed": "1",
+      "variable": "1",
+      "aux": "1",
+      "lifetime": "1"
+    },
+    "40 Comp. hp, airsource 1 MW|2025": {
+      "efficiency": "2",
+      "capex": "2",
+      "fixed": "2",
+      "variable": "2",
+      "aux": "2",
+      "lifetime": "2"
+    },
+    "40 Comp. hp, airsource 1 MW|2030": {
+      "efficiency": "3",
+      "capex": "3",
+      "fixed": "3",
+      "variable": "3",
+      "aux": "3",
+      "lifetime": "3"
+    },
+    "40 Comp. hp, airsource 1 MW|2040": {
+      "efficiency": "4",
+      "capex": "4",
+      "fixed": "4",
+      "variable": "4",
+      "aux": "4",
+      "lifetime": "4"
+    },
+    "40 Comp. hp, airsource 1 MW|2050": {
+      "efficiency": "5",
+      "capex": "5",
+      "fixed": "5",
+      "variable": "5",
+      "aux": "5",
+      "lifetime": "5"
+    },
+    "40 Comp. hp, airsource 3 MW|2020": {
+      "efficiency": "6",
+      "capex": "6",
+      "fixed": "6",
+      "variable": "6",
+      "aux": "6",
+      "lifetime": "6"
+    },
+    "40 Comp. hp, airsource 3 MW|2025": {
+      "efficiency": "7",
+      "capex": "7",
+      "fixed": "7",
+      "variable": "7",
+      "aux": "7",
+      "lifetime": "7"
+    },
+    "40 Comp. hp, airsource 3 MW|2030": {
+      "efficiency": "8",
+      "capex": "8",
+      "fixed": "8",
+      "variable": "8",
+      "aux": "8",
+      "lifetime": "8"
+    },
+    "40 Comp. hp, airsource 3 MW|2040": {
+      "efficiency": "9",
+      "capex": "9",
+      "fixed": "9",
+      "variable": "9",
+      "aux": "9",
+      "lifetime": "9"
+    },
+    "40 Comp. hp, airsource 3 MW|2050": {
+      "efficiency": "10",
+      "capex": "10",
+      "fixed": "10",
+      "variable": "10",
+      "aux": "10",
+      "lifetime": "10"
+    },
+    "40 Comp. hp, airsource 10 MW|2020": {
+      "efficiency": "11",
+      "capex": "11",
+      "fixed": "11",
+      "variable": "11",
+      "aux": "11",
+      "lifetime": "11"
+    },
+    "40 Comp. hp, airsource 10 MW|2025": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, airsource 10 MW|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, airsource 10 MW|2040": {
+      "efficiency": "Year List",
+      "capex": "Year List",
+      "fixed": "Year List",
+      "variable": "Year List",
+      "aux": "Year List",
+      "lifetime": "Year List"
+    },
+    "40 Comp. hp, airsource 10 MW|2050": {
+      "efficiency": "1",
+      "capex": "1",
+      "fixed": "1",
+      "variable": "1",
+      "aux": "1",
+      "lifetime": "1"
+    },
+    "40 Comp. hp, excess heat 1 MW|2020": {
+      "efficiency": "2",
+      "capex": "2",
+      "fixed": "2",
+      "variable": "2",
+      "aux": "2",
+      "lifetime": "2"
+    },
+    "40 Comp. hp, excess heat 1 MW|2025": {
+      "efficiency": "3",
+      "capex": "3",
+      "fixed": "3",
+      "variable": "3",
+      "aux": "3",
+      "lifetime": "3"
+    },
+    "40 Comp. hp, excess heat 1 MW|2030": {
+      "efficiency": "4",
+      "capex": "4",
+      "fixed": "4",
+      "variable": "4",
+      "aux": "4",
+      "lifetime": "4"
+    },
+    "40 Comp. hp, excess heat 1 MW|2040": {
+      "efficiency": "5",
+      "capex": "5",
+      "fixed": "5",
+      "variable": "5",
+      "aux": "5",
+      "lifetime": "5"
+    },
+    "40 Comp. hp, excess heat 1 MW|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, excess heat 3 MW|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, excess heat 3 MW|2025": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, excess heat 3 MW|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, excess heat 3 MW|2040": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, excess heat 3 MW|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, excess heat 10 MW|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, excess heat 10 MW|2025": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, excess heat 10 MW|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, excess heat 10 MW|2040": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, excess heat 10 MW|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, seawater 20 MW|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, seawater 20 MW|2025": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, seawater 20 MW|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, seawater 20 MW|2040": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Comp. hp, seawater 20 MW|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "41 Electric Boilers 1-5 MW|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "41 Electric Boilers 1-5 MW|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "41 Electric Boilers 1-5 MW|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "41 Electric Boilers >10 MW|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "41 Electric Boilers >10 MW|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "41 Electric Boilers >10 MW|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "44 Natural Gas DH Only|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "44 Natural Gas DH Only|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "44 Natural Gas DH Only|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Absorption heat pump, DH|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Absorption heat pump, DH|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "40 Absorption heat pump, DH|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    }
+  },
+  "processHeat": {
+    "302.b High temp. hp Up to 150|2020": {
+      "efficiency": "1",
+      "capex": "1",
+      "fixed": "1",
+      "variable": "1",
+      "aux": "1",
+      "lifetime": "1"
+    },
+    "302.b High temp. hp Up to 150|2030": {
+      "efficiency": "2",
+      "capex": "2",
+      "fixed": "2",
+      "variable": "2",
+      "aux": "2",
+      "lifetime": "2"
+    },
+    "302.b High temp. hp Up to 150|2040": {
+      "efficiency": "3",
+      "capex": "3",
+      "fixed": "3",
+      "variable": "3",
+      "aux": "3",
+      "lifetime": "3"
+    },
+    "302.b High temp. hp Up to 150|2050": {
+      "efficiency": "4",
+      "capex": "4",
+      "fixed": "4",
+      "variable": "4",
+      "aux": "4",
+      "lifetime": "4"
+    },
+    "303 Booster hp 150 C 130 K|2020": {
+      "efficiency": "5",
+      "capex": "5",
+      "fixed": "5",
+      "variable": "5",
+      "aux": "5",
+      "lifetime": "5"
+    },
+    "303 Booster hp 150 C 130 K|2030": {
+      "efficiency": "6",
+      "capex": "6",
+      "fixed": "6",
+      "variable": "6",
+      "aux": "6",
+      "lifetime": "6"
+    },
+    "303 Booster hp 150 C 130 K|2040": {
+      "efficiency": "7",
+      "capex": "7",
+      "fixed": "7",
+      "variable": "7",
+      "aux": "7",
+      "lifetime": "7"
+    },
+    "303 Booster hp 150 C 130 K|2050": {
+      "efficiency": "8",
+      "capex": "8",
+      "fixed": "8",
+      "variable": "8",
+      "aux": "8",
+      "lifetime": "8"
+    },
+    "310.1 Electric boiler steam  |2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "310.1 Electric boiler steam  |2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "310.1 Electric boiler steam  |2040": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "310.1 Electric boiler steam  |2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "310.2 Electric boiler hot water|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "310.2 Electric boiler hot water|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "310.2 Electric boiler hot water|2040": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "310.2 Electric boiler hot water|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "311.2c Hot water boiler Gas|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "311.2c Hot water boiler Gas|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "311.2c Hot water boiler Gas|2040": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "311.2c Hot water boiler Gas|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "311.d Hot water boiler Gas cond|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "311.d Hot water boiler Gas cond|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "311.d Hot water boiler Gas cond|2040": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "311.d Hot water boiler Gas cond|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "312.a Direct firing Natural Gas|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "312.a Direct firing Natural Gas|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "312.a Direct firing Natural Gas|2040": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "312.a Direct firing Natural Gas|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "312.c Direct firing Electricity|2020": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "312.c Direct firing Electricity|2030": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "312.c Direct firing Electricity|2040": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    },
+    "312.c Direct firing Electricity|2050": {
+      "efficiency": "Not stated in Excel",
+      "capex": "Not stated in Excel",
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "aux": "Not stated in Excel",
+      "lifetime": "Not stated in Excel"
+    }
+  },
+  "distribution": {
+    "Filling": {
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "losses": "Not stated in Excel",
+      "levelised": "Not stated in Excel"
+    },
+    "Truck": {
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "losses": "Not stated in Excel",
+      "levelised": "Not stated in Excel"
+    },
+    "Pipeline 4 inch": {
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "losses": "Not stated in Excel",
+      "levelised": "Not stated in Excel"
+    },
+    "EU H2 Backbone - Low": {
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "losses": "Not stated in Excel",
+      "levelised": "Not stated in Excel"
+    },
+    "EU H2 Backbone - Medium": {
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "losses": "Not stated in Excel",
+      "levelised": "Not stated in Excel"
+    },
+    "EU H2 Backbone - High": {
+      "fixed": "Not stated in Excel",
+      "variable": "Not stated in Excel",
+      "losses": "Not stated in Excel",
+      "levelised": "Not stated in Excel"
+    }
+  },
+  "carbon": {
+    "No tax ": {
+      "price": "Not stated in Excel"
+    },
+    "1 - 2022 (low)": {
+      "price": "Not stated in Excel"
+    },
+    "2 - 2022 (mid)": {
+      "price": "Not stated in Excel"
+    },
+    "3 - 2022 (high)": {
+      "price": "Not stated in Excel"
+    },
+    "4 - 2030": {
+      "price": "Not stated in Excel"
+    },
+    "IEA Advanced Economies with Net Zero Pledges - 2030": {
+      "price": "Not stated in Excel"
+    },
+    "IEA Advanced Economies with Net Zero Pledges - 2040": {
+      "price": "Not stated in Excel"
+    },
+    "IEA Advanced Economies with Net Zero Pledges - 2050": {
+      "price": "Not stated in Excel"
+    },
+    "IEA Net Zero by 2050 - 2030": {
+      "price": "Not stated in Excel"
+    },
+    "IEA Net Zero by 2050 - 2040": {
+      "price": "Not stated in Excel"
+    },
+    "IEA Net Zero by 2050 - 2050": {
+      "price": "Not stated in Excel"
+    }
+  },
+  "fuelPrices": {
+    "2019": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2020": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2021": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2022": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2023": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2024": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2025": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2026": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2027": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2028": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2029": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2030": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2031": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2032": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2033": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2034": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2035": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2036": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2037": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2038": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2039": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2040": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2041": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2042": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2043": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2044": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2045": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2046": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2047": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2048": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2049": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    },
+    "2050": {
+      "gas": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "coal": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "diesel": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)",
+      "wood": "Fuel price projection · CIF/import prices (2019-prices kr./GJ)"
+    }
+  },
+  "fuelEmissions": {
+    "gas": {
+      "gas": "fossil.source · emission factor table"
+    },
+    "coal": {
+      "coal": "fossil.source · emission factor table"
+    },
+    "diesel": {
+      "diesel": "fossil.source · emission factor table"
+    },
+    "wood": {
+      "wood": "fossil.source · emission factor table"
+    }
+  },
+  "danishScenarios": {
+    "Energiør offshore LCoE": {
+      "price": "COWI CAPEX landført, 4% WACC",
+      "tariff": "COWI CAPEX landført, 4% WACC",
+      "hours": "COWI CAPEX landført, 4% WACC"
+    },
+    "KF21 ongrid": {
+      "price": "Optimeret ift. 2030 Alkaline Capex (7% WACC)",
+      "tariff": "Optimeret ift. 2030 Alkaline Capex (7% WACC)",
+      "hours": "Optimeret ift. 2030 Alkaline Capex (7% WACC)"
+    },
+    "KF21 m. øer ongrid": {
+      "price": "Optimeret ift. 2030 Alkaline Capex (7% WACC)",
+      "tariff": "Optimeret ift. 2030 Alkaline Capex (7% WACC)",
+      "hours": "Optimeret ift. 2030 Alkaline Capex (7% WACC)"
+    },
+    "Udvidet egenproducent": {
+      "price": "Carsten Vittrup…..",
+      "tariff": "Carsten Vittrup…..",
+      "hours": "Carsten Vittrup….."
+    }
+  },
+  "defaults": {
+    "model": {
+      "transmissionKm": "Not stated in Excel",
+      "distributionKm": "Not stated in Excel",
+      "loadFactor": "Not stated in Excel",
+      "storageUse": "Not stated in Excel",
+      "storageDiscount": "Not stated in Excel",
+      "productionDiscount": "Not stated in Excel",
+      "heatDiscount": "Not stated in Excel",
+      "districtHours": "Not stated in Excel",
+      "processHours": "Not stated in Excel",
+      "hydrogenMwhPerKg": "Not stated in Excel",
+      "dkkPerEur": "Not stated in Excel",
+      "transmission": "Not stated in Excel"
+    }
+  }
+}
