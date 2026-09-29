@@ -28,6 +28,8 @@ The extraction script reads the original workbook from `../upload/` when availab
 
 `data/workbook.json` contains the extracted and updated defaults. `data/input-sources.json` records the supplied external file, sheet, cell, parameter, unit, and conversion for every catalogue-updated field. The Inputs tab shows the external report, dataset, URL, or source note recorded in Excel; values without a source are labelled `Guess`. Edits are stored locally in the browser and can be reset by row or all at once. They are not shared across devices.
 
+The interface displays and accepts all monetary values in DKK, including the hydrogen and heat results, source tables, and comparison charts. The workbook's EUR-based inputs and calculations stay in their original units internally; the interface converts them at the fixed workbook rate of 7.45 DKK/EUR. The Danish scenario and fuel-price data are already in DKK and are not converted. Existing browser edits in EUR are preserved and displayed in DKK.
+
 - Renewable fuels: 100 MW alkaline and PEM electrolysers for 2030, 2040, and 2050. The 2020 rows and 1 MW solid oxide rows retain their workbook values.
 - Energy storage: matching tank, LOHC, and cavern rows for 2020–2050. Missing parameters retain workbook values.
 - Electricity and district heating: matching boiler, heat pump, and gas district heat rows; the source's waste heat label corresponds to the workbook's excess heat row.

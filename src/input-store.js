@@ -60,6 +60,7 @@ try {
   for (const [category, records] of Object.entries(saved)) {
     for (const [id, fields] of Object.entries(records)) {
       for (const [field, value] of Object.entries(fields)) {
+        if (category === 'defaults' && field === 'dkkPerEur') continue;
         if (valid(category, field, value)) {
           try { assign(category, id, field, value); } catch { continue; }
           (((overrides[category] ??= {})[id] ??= {}))[field] = value;
@@ -145,6 +146,7 @@ try {
 } catch { /* Device storage is optional. */ }
 
 export function editInput(category, id, field, value) {
+  if (category === 'defaults' && field === 'dkkPerEur') throw new Error('The workbook conversion rate is fixed at 7.45 DKK/EUR.');
   if (!valid(category, field, value)) throw new Error('Enter a valid nonnegative number in the expected units.');
   assign(category, id, field, value);
   const original = originalValue(category, id, field);

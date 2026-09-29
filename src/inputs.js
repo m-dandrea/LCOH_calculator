@@ -1,18 +1,19 @@
-import {data, provenance, workbookProvenance, recordId, isEdited, isCustom, addInput, removeInput} from './input-store.js';
+import {data, defaults, provenance, workbookProvenance, recordId, isEdited, isCustom} from './input-store.js';
+import {displayValue, isEuroField} from './currency.js';
 
 const categories = [
-  ['electricity','Electricity sources','price:€/MWh,tariff:€/MWh,emissions:kg CO₂/MWh'],
-  ['carbon','Carbon tax','price:€/t CO₂'],
-  ['transmission','Electricity transmission','losses:fraction,cost:€/MW/km/year'],
-  ['electrolysers','Electrolysers','capex:€/kW,opex:fraction,efficiency:fraction,heat:fraction,lifetime:years,hours:h/year'],
-  ['storage','Hydrogen storage','capex:M€/MWh,fixed:€/MW/year,variable:€/MWh,efficiency:fraction,lifetime:years,capacity:MW,duration:hours'],
-  ['distribution','Hydrogen distribution','fixed:€/MW/km/year,variable:€/MWh/km,losses:fraction,levelised:€/MWh'],
+  ['electricity','Electricity sources','price:DKK/MWh,tariff:DKK/MWh,emissions:kg CO₂/MWh'],
+  ['carbon','Carbon tax','price:DKK/t CO₂'],
+  ['transmission','Electricity transmission','losses:fraction,cost:DKK/MW/km/year'],
+  ['electrolysers','Electrolysers','capex:DKK/kW,opex:fraction,efficiency:fraction,heat:fraction,lifetime:years,hours:h/year'],
+  ['storage','Hydrogen storage','capex:MDKK/MWh,fixed:DKK/MW/year,variable:DKK/MWh,efficiency:fraction,lifetime:years,capacity:MW,duration:hours'],
+  ['distribution','Hydrogen distribution','fixed:DKK/MW/km/year,variable:DKK/MWh/km,losses:fraction,levelised:DKK/MWh'],
   ['fuelPrices','Fuel prices','gas:DKK/GJ,coal:DKK/GJ,diesel:DKK/GJ,wood:DKK/GJ'],
   ['fuelEmissions','Fuel emissions','value:kg CO₂/MWh'],
-  ['districtHeat','District heat','efficiency:%,capex:M€/MW,fixed:€/MW/year,variable:€/MWh,aux:%,lifetime:years'],
-  ['processHeat','Process heat','efficiency:%,capex:M€/MW,fixed:€/MW/year,variable:€/MWh,aux:%,lifetime:years'],
+  ['districtHeat','District heat','efficiency:%,capex:MDKK/MW,fixed:DKK/MW/year,variable:DKK/MWh,aux:%,lifetime:years'],
+  ['processHeat','Process heat','efficiency:%,capex:MDKK/MW,fixed:DKK/MW/year,variable:DKK/MWh,aux:%,lifetime:years'],
   ['danishScenarios','Danish 2030 scenarios','price:DKK/MWh,tariff:DKK/MWh,hours:h/year,networkLoss:fraction'],
-  ['defaults','Model assumptions','transmissionKm:km,distributionKm:km,loadFactor:fraction,storageUse:fraction,storageDiscount:fraction,productionDiscount:fraction,heatDiscount:fraction,districtHours:h/year,processHours:h/year,hydrogenMwhPerKg:MWh/kg,dkkPerEur:DKK/€']
+  ['defaults','Model assumptions','transmissionKm:km,distributionKm:km,loadFactor:fraction,storageUse:fraction,storageDiscount:fraction,productionDiscount:fraction,heatDiscount:fraction,districtHours:h/year,processHours:h/year,hydrogenMwhPerKg:MWh/kg']
 ];
 const esc = value => String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const title = field => field.replace(/([A-Z])/g,' $1').replace(/^./,c=>c.toUpperCase());
@@ -37,14 +38,14 @@ export function renderInputs(category='electrolysers', query='', year=null) {
     const secondary=category==='districtHeat'||category==='processHeat'||category==='electrolysers'||category==='storage' ? `${row.year}${row.fuel?' · '+row.fuel:''}` : category==='carbon'?String(row.year||''):'';
     const cells=fields.map(([field,unit])=>{
       const actualField=category==='fuelEmissions'?id:field;
-      const value=row[field];
+      const value=displayValue(category,field,row[field],defaults.dkkPerEur);
       const source=provenance[category]?.[id]?.[actualField];
       const workbookSource=workbookProvenance[category]?.[id]?.[actualField] || workbookProvenance[category]?.[String(id)]?.[actualField];
       const edited=isEdited(category,id,actualField);
       const gridNoCable=category==='transmission' && id.startsWith('AF25 grid reference') && field==='cost';
       const legacyNoLoss=category==='danishScenarios' && field==='networkLoss' && !id.startsWith('KF26');
       const modelChoice=gridNoCable||legacyNoLoss;
-      const sourceText=source?`${source.file} · ${source.cell} · ${source.parameter}${source.priceYear?' · price basis '+source.priceYear:''}`:gridNoCable?'Model choice: no dedicated HVDC distance charge for the grid reference; the electricity tariff is accounted for at point 1.':legacyNoLoss?'Model choice: original Excel scenario formula has no explicit network-loss multiplier.':workbookSource||'Guess';
+      const sourceText=(source?`${source.file} · ${source.cell} · ${source.parameter}${source.priceYear?' · price basis '+source.priceYear:''}`:gridNoCable?'Model choice: no dedicated HVDC distance charge for the grid reference; the electricity tariff is accounted for at point 1.':legacyNoLoss?'Model choice: original Excel scenario formula has no explicit network-loss multiplier.':workbookSource||'Guess')+(isEuroField(category,field)?` · Shown in DKK at ${defaults.dkkPerEur} DKK/EUR.`:'');
       const custom=isCustom(category,id);
       const status=custom?'Added by user':edited?'Edited':source?'Source':modelChoice?'Model':workbookSource||'Guess';
       return `<td><label class="input-cell"><span class="sr-only">${esc(label)} ${esc(title(field))}</span><input type="number" step="any" value="${value??''}" data-input-category="${category}" data-input-id="${esc(id)}" data-input-field="${esc(actualField)}" aria-label="${esc(label)} ${esc(title(field))} (${esc(unit)})"><small class="source ${edited?'edited':source?'catalogue':''}" title="${esc(sourceText)}">${esc(status)}</small></label></td>`;
@@ -57,7 +58,7 @@ export function renderInputs(category='electrolysers', query='', year=null) {
   return `<main class="shell inputs-page"><div class="heading"><div><p class="eyebrow">SOURCE DATA</p><h1>Input data</h1><p>Edit the source tables used by the dashboard. Changes recalculate results and stay in this browser.</p></div><button id="reset-inputs" class="reset-inputs">Reset all input data</button></div>
     <section class="inputs-panel"><div class="inputs-toolbar"><label class="field"><span>Input table</span><select id="input-category">${categories.map(([key,label])=>`<option value="${key}" ${key===category?'selected':''}>${label}</option>`).join('')}</select></label><label class="field"><span>Find a row</span><input id="input-search" type="search" value="${esc(query)}" placeholder="Search technology or year"></label></div>
     <div id="input-charts">${renderCharts(category,query,year)}</div>${renderAddForm(category)}
-    <p class="input-help"><span class="source catalogue">Source</span> shows the external report, dataset, URL, or source note recorded in Excel · values marked <strong>Guess</strong> have no source provided in Excel · Model: a stated calculation choice · <span class="source edited">Edited</span> your local value. Hover over a label for the full source text. Published price years are retained; no inflation adjustment was applied.</p>
+    <p class="input-help">All monetary values are shown and edited in DKK (MDKK means million DKK). EUR values from the workbook use its fixed conversion of 7.45 DKK/EUR. <span class="source catalogue">Source</span> shows the external report, dataset, URL, or source note recorded in Excel · values marked <strong>Guess</strong> have no source provided in Excel · Model: a stated calculation choice · <span class="source edited">Edited</span> your local value. Hover over a label for the full source text. Published price years are retained; no inflation adjustment was applied.</p>
     ${category==='electrolysers'?'<p class="input-help">The main hydrogen production calculation follows the original workbook formula, which uses CAPEX in its O&M term. The OPEX column is retained for the separate Danish scenario calculation.</p>':''}
     <div class="table-wrap inputs-table"><table><thead><tr><th>Record</th>${fields.map(([field,unit])=>`<th>${esc(title(field))}<small>${esc(unit)}</small></th>`).join('')}<th></th></tr></thead><tbody>${body}</tbody></table></div><p id="no-results" hidden>No matching rows.</p></section></main>`;
 }
@@ -88,7 +89,7 @@ export function renderCharts(category, query='', year=null) {
     (chartLabel(category,x)+' '+(x.fuel||'')).toLowerCase().includes(query.toLowerCase().trim()));
   const charts=fields.map((field,index)=>{
     // Fuel price columns are separate fuels, not technology parameters.
-    const points=category==='fuelPrices' ? ['gas','coal','diesel','wood'].map(fuel=>({name:title(fuel),value:relevant[0]?.[fuel]})) : relevant.map(x=>({name:chartLabel(category,x),value:x[field]}));
+    const points=category==='fuelPrices' ? ['gas','coal','diesel','wood'].map(fuel=>({name:title(fuel),value:relevant[0]?.[fuel]})) : relevant.map(x=>({name:chartLabel(category,x),value:displayValue(category,field,x[field],defaults.dkkPerEur)}));
     const values=points.filter(x=>Number.isFinite(x.value));
     if (!values.length) return '';
     const max=Math.max(...values.map(x=>x.value),0);

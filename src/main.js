@@ -6,6 +6,7 @@ import './heat-flow.css';
 import {renderHeatFlow, renderHeatComparison} from './heat-flow.js';
 import {renderInputs, renderCharts} from './inputs.js';
 import {editInput, resetInput, resetAllInputs, addInput, removeInput} from './input-store.js';
+import {storedValue, monetaryEdits} from './currency.js';
 
 const root = document.querySelector('#app');
 const state = {...defaults};
@@ -16,6 +17,7 @@ let inputQuery = '';
 let chartYear = null;
 const header = () => `<header class="topbar"><div class="brand"><span class="brand-mark">H₂</span><span>Hydrogen cost calculator</span></div><nav aria-label="Main navigation"><a href="#dashboard" aria-current="${activeTab==='dashboard'?'page':'false'}">Hydrogen flowchart</a><a href="#heat" aria-current="${activeTab==='heat'?'page':'false'}">Heat flow</a><a href="#inputs" aria-current="${activeTab==='inputs'?'page':'false'}">Input data</a></nav>${activeTab==='dashboard'?'<button id="reset" class="subtle">Reset scenario</button>':''}</header>`;
 const fmt = (n, digits=2) => new Intl.NumberFormat('en-US',{maximumFractionDigits:digits,minimumFractionDigits:digits}).format(n);
+const dkk = value => value * defaults.dkkPerEur;
 const escape = s => String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const by = (key, value) => data[key].find(row => row.name === value);
 const options = (values, current) => values.map(v => `<option value="${escape(v)}" ${String(v)===String(current)?'selected':''}>${escape(v)}</option>`).join('');
@@ -43,13 +45,13 @@ function render() {
   }
   const p = r.p;
   const pathway = `<div class="flow-track" aria-label="Electricity to delivered hydrogen pathway">
-    ${stage(1,'Electricity source',6,select('Source','electricity',data.electricity.map(x=>x.name)),r.electricity,'€/MWh')}
-    ${stage(2,'CO₂ taxation',4,select('Tax scenario','carbon',data.carbon.map(x=>x.name)),r.electricity+r.carbonElectricity,'€/MWh')}
-    ${stage(3,'Grid / transmission',5,`${select('Network case','transmission',data.transmission.map(x=>x.name))}${r.transmission.name==='HVDC'?number('Distance','transmissionKm',state.transmissionKm,'km',1):`<p class="tap-caption">${fmt(r.transmission.losses*100,2)}% whole-grid loss · no separate distance charge</p>`}`,r.transmitted,'€/MWh')}
-    ${stage(4,'Electrolyser',2,select('Technology','electrolyser',data.electrolysers.map(x=>x.name)),r.produced,'€/MWh H₂')}
-    ${stage(5,'Hydrogen storage',1,select('Technology','storage',data.storage.map(x=>x.name)),r.stored,'€/MWh H₂')}
-    ${stage(6,'Distribution',0,`${select('Method','distribution',data.distribution.map(x=>x.name))}${number('Distance','distributionKm',state.distributionKm,'km',1)}`,r.delivered,'€/MWh H₂')}
-    ${stage(7,'Hydrogen tap',3,`<p class="tap-caption">Delivered hydrogen<br/>including storage and transport</p>`,r.perKg,'€/kg',true)}
+    ${stage(1,'Electricity source',6,select('Source','electricity',data.electricity.map(x=>x.name)),dkk(r.electricity),'DKK/MWh')}
+    ${stage(2,'CO₂ taxation',4,select('Tax scenario','carbon',data.carbon.map(x=>x.name)),dkk(r.electricity+r.carbonElectricity),'DKK/MWh')}
+    ${stage(3,'Grid / transmission',5,`${select('Network case','transmission',data.transmission.map(x=>x.name))}${r.transmission.name==='HVDC'?number('Distance','transmissionKm',state.transmissionKm,'km',1):`<p class="tap-caption">${fmt(r.transmission.losses*100,2)}% whole-grid loss · no separate distance charge</p>`}`,dkk(r.transmitted),'DKK/MWh')}
+    ${stage(4,'Electrolyser',2,select('Technology','electrolyser',data.electrolysers.map(x=>x.name)),dkk(r.produced),'DKK/MWh H₂')}
+    ${stage(5,'Hydrogen storage',1,select('Technology','storage',data.storage.map(x=>x.name)),dkk(r.stored),'DKK/MWh H₂')}
+    ${stage(6,'Distribution',0,`${select('Method','distribution',data.distribution.map(x=>x.name))}${number('Distance','distributionKm',state.distributionKm,'km',1)}`,dkk(r.delivered),'DKK/MWh H₂')}
+    ${stage(7,'Hydrogen tap',3,`<p class="tap-caption">Delivered hydrogen<br/>including storage and transport</p>`,dkk(r.perKg),'DKK/kg',true)}
   </div>`;
   root.innerHTML = `${header()}
   <main class="shell"><div class="heading"><div><p class="eyebrow">SOURCE-BASED SCENARIO · 2030 DEFAULT</p><h1>Hydrogen flowchart</h1><p>Choose each stage of the pathway to see how cost changes through production, storage and delivery.</p></div><div class="workbook-tag">AF25/KF26 forecasts · workbook fallback</div></div>
@@ -59,16 +61,16 @@ function render() {
     <div class="field-grid">${r.transmission.name==='HVDC'?number('Transmission load factor','loadFactor',state.loadFactor,'fraction',0.01):''}
       ${number('Storage capacity use','storageUse',state.storageUse,'fraction',0.01)}</div>
     <details><summary>Advanced assumptions <span>prices, technology and financing</span></summary><div class="field-grid advanced">
-      ${number('Electricity price','electricityPrice',edits.electricityPrice??e.price,'€/MWh')}${number('Grid tariff','tariff',edits.tariff??e.tariff,'€/MWh')}
-      ${number('Electricity emissions','emissions',edits.emissions??e.emissions,'kg CO₂/MWh')}${number('Carbon price','carbonPrice',edits.carbonPrice??c.price,'€/t CO₂')}
-      ${number('Electrolyser CAPEX','capex',edits.capex??el.capex,'€/kW')}${number('Electrolyser lifetime','lifetime',edits.lifetime??el.lifetime,'years')}
+      ${number('Electricity price','electricityPrice',dkk(edits.electricityPrice??e.price),'DKK/MWh')}${number('Grid tariff','tariff',dkk(edits.tariff??e.tariff),'DKK/MWh')}
+      ${number('Electricity emissions','emissions',edits.emissions??e.emissions,'kg CO₂/MWh')}${number('Carbon price','carbonPrice',dkk(edits.carbonPrice??c.price),'DKK/t CO₂')}
+      ${number('Electrolyser CAPEX','capex',dkk(edits.capex??el.capex),'DKK/kW')}${number('Electrolyser lifetime','lifetime',edits.lifetime??el.lifetime,'years')}
       ${number('Electrolyser efficiency','efficiency',edits.efficiency??el.efficiency,'fraction')}${number('Electrolyser FLH','hours',edits.hours??el.hours,'h/yr')}
       ${number('Storage efficiency','storageEfficiency',edits.storageEfficiency??st.efficiency,'fraction')}
       ${number('Production discount rate','productionDiscount',state.productionDiscount,'fraction')}${number('Storage discount rate','storageDiscount',state.storageDiscount,'fraction')}
     </div></details></section>
     <section class="results" aria-label="Calculated results"><div class="section-head"><span class="step">02</span><h2>Cost detail</h2></div>
-      <div class="metric-grid">${card('Direct from electrolyser',r.directKg,'€/kg')}${card('Production',r.produced,'€/MWh')}${card('Electricity at electrolyser',r.transmitted,'€/MWh')}</div>
-      <h3>Cost build-up <small>€/MWh H₂</small></h3><div class="breakdown">${row('Production',r.produced)}${row('Storage and energy loss',r.stored-r.produced)}${row('Distribution',r.distributionCost)}<div class="break-row total"><span>Delivered</span><strong>${fmt(r.delivered)}</strong></div></div>
+      <div class="metric-grid">${card('Direct from electrolyser',dkk(r.directKg),'DKK/kg')}${card('Production',dkk(r.produced),'DKK/MWh')}${card('Electricity at electrolyser',dkk(r.transmitted),'DKK/MWh')}</div>
+      <h3>Cost build-up <small>DKK/MWh H₂</small></h3><div class="breakdown">${row('Production',dkk(r.produced))}${row('Storage and energy loss',dkk(r.stored-r.produced))}${row('Distribution',dkk(r.distributionCost))}<div class="break-row total"><span>Delivered</span><strong>${fmt(dkk(r.delivered))}</strong></div></div>
       <p class="note">Point 3 uses AF25's whole-grid loss reference (DK1 6.77% or DK2 6.22%) for a grid scenario, with no additional HVDC distance charge; the tariff is already selected with electricity. These system-wide losses are a proxy, not a specific electrolyser connection estimate. The workbook's 2% HVDC loss and per-km charge remain selectable for a dedicated cable. KF26 provides spot prices, not transmission CAPEX or losses. Its price is the simple mean of 8,760 hours, not an electrolyser dispatch price. The grid tariff and emissions remain workbook values. AF25 ETS1 is an allowance scenario. Price bases are not inflation-adjusted; inspect each source in Input data.</p>
     </section></div>
     <section class="comparison"><div class="section-head"><span class="step">03</span><h2>Danish 2030 hydrogen scenarios</h2></div>
@@ -85,7 +87,7 @@ root.addEventListener('change', event => {
     const {inputCategory:category,inputId:id,inputField:field}=target.dataset;
     const value=Number(target.value);
     if (target.value.trim()==='') { target.setCustomValidity('Enter a number.'); target.reportValidity(); target.setCustomValidity(''); return; }
-    try { editInput(category,id,field,value); edits={}; if(category==='defaults') state[field]=value; calculate(state); }
+    try { editInput(category,id,field,storedValue(category,field,value,defaults.dkkPerEur)); edits={}; if(category==='defaults') state[field]=value; calculate(state); }
     catch(error) { target.setCustomValidity(error.message); target.reportValidity(); target.setCustomValidity(''); return; }
     render(); return;
   }
@@ -97,7 +99,7 @@ root.addEventListener('change', event => {
     (related[key]||[]).forEach(k=>delete edits[k]);
     if(key==='electricity') state.transmission = state.electricity.startsWith('KF26 grid spot') || state.electricity.startsWith('El grid') ? 'AF25 grid reference - DK1' : 'HVDC';
   }
-  if (target.dataset.edit) edits[target.dataset.edit]=Number(target.value);
+  if (target.dataset.edit) edits[target.dataset.edit]=monetaryEdits.has(target.dataset.edit)?Number(target.value)/defaults.dkkPerEur:Number(target.value);
   try { calculate(state,edits); } catch(error) {
     Object.assign(state,oldState); edits=oldEdits;
     target.setCustomValidity(error.message); target.reportValidity(); target.setCustomValidity('');
@@ -121,7 +123,7 @@ root.addEventListener('click', event => {
     if(name) row.name=name.value.trim();
     const year=form.querySelector('[data-add-year]');
     if(year) row.year=Number(year.value);
-    form.querySelectorAll('[data-add-field]').forEach(input=>{row[input.dataset.addField]=Number(input.value);});
+    form.querySelectorAll('[data-add-field]').forEach(input=>{row[input.dataset.addField]=input.value.trim()===''?NaN:storedValue(category,input.dataset.addField,Number(input.value),defaults.dkkPerEur);});
     try { addInput(category,row); render(); }
     catch(error) { const message=form.querySelector('[data-add-error]'); message.textContent=error.message; message.hidden=false; }
     return;

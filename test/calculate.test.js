@@ -2,6 +2,9 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {calculate, defaults, danish2030, data} from '../src/calculate.js';
 import {baseline, provenance, workbookProvenance, editInput, resetInput, resetAllInputs, addInput, removeInput, isCustom} from '../src/input-store.js';
+import {displayValue, storedValue} from '../src/currency.js';
+import {renderInputs, renderCharts} from '../src/inputs.js';
+import {renderHeatComparison} from '../src/heat-flow.js';
 
 function close(actual, expected) { assert.ok(Math.abs(actual-expected)<1e-8, `${actual} != ${expected}`); }
 test('uses the 2030 AF25/KF26 reference pathway and carries hydrogen into heat', () => {
@@ -109,4 +112,27 @@ test('existing workbook rows can be removed and restored', () => {
   resetAllInputs();
   assert.ok(data.electricity.some(x=>x.name===name));
   assert.equal(data.electricity.length,baseline.electricity.length);
+});
+
+test('monetary inputs and results are displayed in DKK without changing their source units', () => {
+  const rate=defaults.dkkPerEur;
+  const electricity=data.electricity.find(x=>x.name===defaults.electricity);
+  close(displayValue('electricity','price',electricity.price,rate),641.6130136986301);
+  close(storedValue('electricity','price',641.6130136986301,rate),electricity.price);
+  close(displayValue('carbon','price',data.carbon.find(x=>x.name===defaults.carbon).price,rate),716);
+  close(displayValue('fuelPrices','gas',72.02,rate),72.02);
+  close(displayValue('danishScenarios','price',641.6130136986301,rate),641.6130136986301);
+  const inputPage=renderInputs('electricity');
+  assert.match(inputPage,/Price<small>DKK\/MWh/);
+  assert.match(inputPage,/value="641\.6130136986301"/);
+  assert.match(renderCharts('electricity'),/DKK\/MWh/);
+  const heat=renderHeatComparison(calculate(),defaults);
+  assert.match(heat,/Total DKK\/MWh heat/);
+  assert.match(heat,/DKK\/MWh H₂/);
+  const before=calculate().delivered;
+  editInput('electricity',electricity.name,'price',storedValue('electricity','price',750,rate));
+  assert.ok(calculate().delivered>before);
+  close(displayValue('electricity','price',electricity.price,rate),750);
+  resetInput('electricity',electricity.name);
+  close(calculate().delivered,before);
 });
