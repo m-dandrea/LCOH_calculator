@@ -3565,5 +3565,747 @@
         "conversion": 1
       }
     }
+  },
+  "fuelPrices": {
+    "2025": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!C8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!C6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!C27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2026": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!D8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!D6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!D27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2027": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!E8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!E6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!E27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2028": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!F8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!F6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!F27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2029": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!G8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!G6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!G27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2030": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!H8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!H6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!H27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2031": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!I8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!I6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!I27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2032": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!J8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!J6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!J27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2033": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!K8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!K6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!K27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2034": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!L8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!L6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!L27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2035": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!M8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!M6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!M27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2036": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!N8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!N6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!N27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2037": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!O8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!O6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!O27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2038": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!P8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!P6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!P27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2039": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!Q8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!Q6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!Q27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2040": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!R8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!R6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!R27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2041": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!S8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!S6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!S27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2042": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!T8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!T6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!T27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2043": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!U8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!U6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!U27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2044": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!V8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!V6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!V27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2045": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!W8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!W6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!W27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2046": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!X8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!X6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!X27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2047": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!Y8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!Y6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!Y27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2048": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!Z8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!Z6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!Z27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2049": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!AA8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!AA6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!AA27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    },
+    "2050": {
+      "gas": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!AB8",
+        "parameter": "Natural gas import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "coal": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!AB6",
+        "parameter": "Coal import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      },
+      "wood": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Brændselspriser!AB27",
+        "parameter": "Industrial wood pellet import",
+        "unit": "DKK/GJ",
+        "priceYear": 2025,
+        "conversion": 1
+      }
+    }
+  },
+  "carbon": {
+    "AF25 ETS1 allowance - 2030": {
+      "price": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "CO2-kvotepris!H4",
+        "parameter": "ETS1 allowance price",
+        "unit": "DKK/t CO₂",
+        "priceYear": 2025,
+        "conversion": "divide by workbook DKK/EUR (7.45)"
+      }
+    },
+    "AF25 ETS1 allowance - 2035": {
+      "price": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "CO2-kvotepris!M4",
+        "parameter": "ETS1 allowance price",
+        "unit": "DKK/t CO₂",
+        "priceYear": 2025,
+        "conversion": "divide by workbook DKK/EUR (7.45)"
+      }
+    },
+    "AF25 ETS1 allowance - 2040": {
+      "price": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "CO2-kvotepris!R4",
+        "parameter": "ETS1 allowance price",
+        "unit": "DKK/t CO₂",
+        "priceYear": 2025,
+        "conversion": "divide by workbook DKK/EUR (7.45)"
+      }
+    },
+    "AF25 ETS1 allowance - 2050": {
+      "price": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "CO2-kvotepris!AB4",
+        "parameter": "ETS1 allowance price",
+        "unit": "DKK/t CO₂",
+        "priceYear": 2025,
+        "conversion": "divide by workbook DKK/EUR (7.45)"
+      }
+    }
+  },
+  "electricity": {
+    "KF26 grid spot average - 2030": {
+      "price": {
+        "file": "KF26 - Resultater - Tal bag figurer september 2026.xlsx",
+        "cell": "25.1!C4:C8763",
+        "parameter": "Arithmetic mean of 8,760 hourly electricity spot prices",
+        "unit": "DKK/MWh",
+        "priceYear": 2026,
+        "conversion": "annual mean, divide by workbook DKK/EUR (7.45)"
+      }
+    },
+    "KF26 grid spot average - 2035": {
+      "price": {
+        "file": "KF26 - Resultater - Tal bag figurer september 2026.xlsx",
+        "cell": "25.1!D4:D8763",
+        "parameter": "Arithmetic mean of 8,760 hourly electricity spot prices",
+        "unit": "DKK/MWh",
+        "priceYear": 2026,
+        "conversion": "annual mean, divide by workbook DKK/EUR (7.45)"
+      }
+    }
   }
 }

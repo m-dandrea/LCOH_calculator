@@ -38,7 +38,7 @@ function render() {
     return;
   }
   if (activeTab === 'heat') {
-    root.innerHTML = `${header()}<main class="shell heat-page"><div class="heading"><div><p class="eyebrow">WORKBOOK HEAT PATHWAYS</p><h1>District and process heat</h1><p>Compare electricity, natural gas and hydrogen routes using the cost of hydrogen from the Hydrogen flowchart.</p></div><label class="field heat-year"><span>Technology year</span><select data-state="heatYear">${options([2020,2030,2040,2050],state.heatYear)}</select></label></div>${number('Heat discount rate','heatDiscount',state.heatDiscount,'fraction',0.01)}${renderHeatFlow(r,state)}${renderHeatComparison(r,state)}<p class="note">Source: Flow Chart - Heat and HeatCalculation in Hydrogen_calc_tool_17May22_clean.xlsx. Icons from the supplied workbook.</p></main>`;
+    root.innerHTML = `${header()}<main class="shell heat-page"><div class="heading"><div><p class="eyebrow">WORKBOOK HEAT PATHWAYS</p><h1>District and process heat</h1><p>Compare electricity, natural gas and hydrogen routes using the cost of hydrogen from the Hydrogen flowchart.</p></div><label class="field heat-year"><span>Technology year</span><select data-state="heatYear">${options([2020,2030,2040,2050],state.heatYear)}</select></label></div>${number('Heat discount rate','heatDiscount',state.heatDiscount,'fraction',0.01)}${renderHeatFlow(r,state)}${renderHeatComparison(r,state)}<p class="note">Heat routes and formulas: Hydrogen_calc_tool_17May22_clean.xlsx. The selected electricity and ETS1 prices carry into heat; natural gas uses the AF25 import forecast for 2025–2050. AF25 prices are in 2025 DKK; KF26 spot prices are in 2026 DKK. No inflation adjustment was applied. Icons from the supplied workbook.</p></main>`;
     return;
   }
   const p = r.p;
@@ -52,7 +52,7 @@ function render() {
     ${stage(7,'Hydrogen tap',3,`<p class="tap-caption">Delivered hydrogen<br/>including storage and transport</p>`,r.perKg,'€/kg',true)}
   </div>`;
   root.innerHTML = `${header()}
-  <main class="shell"><div class="heading"><div><p class="eyebrow">LEVELISED COST MODEL</p><h1>Hydrogen flowchart</h1><p>Choose each stage of the pathway to see how cost changes through production, storage and delivery.</p></div><div class="workbook-tag">Updated catalogues · workbook fallback</div></div>
+  <main class="shell"><div class="heading"><div><p class="eyebrow">SOURCE-BASED SCENARIO · 2030 DEFAULT</p><h1>Hydrogen flowchart</h1><p>Choose each stage of the pathway to see how cost changes through production, storage and delivery.</p></div><div class="workbook-tag">AF25/KF26 forecasts · workbook fallback</div></div>
   <section class="pathway" aria-label="Hydrogen pathway"><div class="pathway-title"><div><h2>Hydrogen pathway</h2><p>Selections and distances update the cost at every stage.</p></div><span>Costs per unit of output at each stage</span></div>${pathway}</section>
   <div class="layout"><section class="controls" aria-label="Scenario inputs">
     <div class="section-head"><span class="step">01</span><h2>Other assumptions</h2></div>
@@ -69,11 +69,11 @@ function render() {
     <section class="results" aria-label="Calculated results"><div class="section-head"><span class="step">02</span><h2>Cost detail</h2></div>
       <div class="metric-grid">${card('Direct from electrolyser',r.directKg,'€/kg')}${card('Production',r.produced,'€/MWh')}${card('Electricity at electrolyser',r.transmitted,'€/MWh')}</div>
       <h3>Cost build-up <small>€/MWh H₂</small></h3><div class="breakdown">${row('Production',r.produced)}${row('Storage and energy loss',r.stored-r.produced)}${row('Distribution',r.distributionCost)}<div class="break-row total"><span>Delivered</span><strong>${fmt(r.delivered)}</strong></div></div>
-      <p class="note">The model retains the original workbook formulas. Updated catalogue values and original workbook assumptions are identified in the Input data tab.</p>
+      <p class="note">The model retains the original workbook formulas. KF26 grid electricity is the simple mean of 8,760 hourly spot prices, not an electrolyser dispatch price. Its tariff and emissions remain workbook values. AF25 ETS1 is an allowance scenario, not a universal tax. Forecasts retain their published 2025/2026 price bases without inflation adjustment; other unmatched assumptions retain workbook values. Inspect each cell's source in Input data.</p>
     </section></div>
     <section class="comparison"><div class="section-head"><span class="step">03</span><h2>Danish 2030 hydrogen scenarios</h2></div>
       <details class="all-tech"><summary>Danish 2030 electricity scenarios · DKK/GJ H₂</summary><p class="note">Separate scenario calculation from the workbook’s “Brint Input & control” and “Brint Cost” sheets. Alkaline 100 MW, 2030 assumptions.</p><div class="table-wrap"><table><thead><tr><th>Scenario</th><th>Electricity source</th><th class="num">DKK/MWh</th><th class="num">Tariff</th><th class="num">FLH</th><th class="num">DKK/GJ</th></tr></thead><tbody>${danish2030().map(x=>`<tr><td>${escape(x.name)}</td><td>${escape(x.source)}</td><td class="num">${fmt(x.price,0)}</td><td class="num">${fmt(x.tariff,0)}</td><td class="num">${fmt(x.hours,0)}</td><td class="num bold">${fmt(x.cost)}</td></tr>`).join('')}</tbody></table></div></details>
-    </section><footer>Sources: supplied technology catalogues and Hydrogen_calc_tool_17May22_clean.xlsx. Workbook formulas reproduced for the shown pathways. Icons from the supplied workbook: Freepik, Ultimatearm and SmashIcons via Flaticon.</footer></main>`;
+    </section><footer>Sources: AF25 public dataset and summary note, KF26 figure data and report, supplied technology catalogues, and Hydrogen_calc_tool_17May22_clean.xlsx. Workbook formulas reproduced for the shown pathways. Icons from the supplied workbook: Freepik, Ultimatearm and SmashIcons via Flaticon.</footer></main>`;
   [...root.querySelectorAll('details')].forEach((x,i)=>x.open=Boolean(openDetails[i]));
 }
 

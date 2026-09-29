@@ -4,18 +4,30 @@ import {calculate, defaults, danish2030, data} from '../src/calculate.js';
 import {baseline, provenance, editInput, resetInput} from '../src/input-store.js';
 
 function close(actual, expected) { assert.ok(Math.abs(actual-expected)<1e-8, `${actual} != ${expected}`); }
-test('matches the catalogue-updated default pathway', () => {
+test('uses the 2030 AF25/KF26 reference pathway and carries hydrogen into heat', () => {
   const r = calculate();
-  close(r.electricity,40.93959731543624);
-  close(r.produced,92.43525603000148);
-  close(r.delivered,109.0658346071894);
-  close(r.perKg,4.297193883523263);
-  close(r.fossils.coal,31.3390580074726);
-  close(r.fossils.gas,42.80990759504223);
-  close(r.heat.district.find(x=>x.name==='41 Electric Boilers >10 MW').total,46.046649596084535);
-  close(r.heat.district.find(x=>x.name==='44 Natural Gas DH Only' && x.fuel==='Hydrogen').total,109.18394102675781);
-  close(r.heat.process.find(x=>x.name.trim()==='310.1 Electric boiler steam').total,46.64905473284582);
-  close(r.heat.process.find(x=>x.name==='312.a Direct firing Natural Gas' && x.fuel==='Hydrogen').total,110.26813821471596);
+  close(r.electricity,99.54537096625907);
+  close(r.produced,236.44307327028503);
+  close(r.delivered,278.23599970338887);
+  close(r.perKg,10.96249838831352);
+  close(r.fossils.coal,44.976844026845626);
+  close(r.fossils.gas,54.0107855033557);
+  close(r.heat.district.find(x=>x.name==='41 Electric Boilers >10 MW').total,114.98876943425662);
+  close(r.heat.district.find(x=>x.name==='44 Natural Gas DH Only' && x.fuel==='Hydrogen').total,271.929061125852);
+  close(r.heat.process.find(x=>x.name.trim()==='310.1 Electric boiler steam').total,115.59117457101792);
+  close(r.heat.process.find(x=>x.name==='312.a Direct firing Natural Gas' && x.fuel==='Hydrogen').total,279.60809459068);
+});
+test('published forecast cells replace only matching fields', () => {
+  const fuel=data.fuelPrices.find(x=>x.year===2030);
+  close(fuel.gas,72.02);
+  close(fuel.coal,25.68);
+  close(fuel.wood,79.59);
+  assert.ok(!provenance.fuelPrices['2030'].diesel);
+  assert.ok(!provenance.fuelPrices['2024']);
+  close(data.carbon.find(x=>x.name==='AF25 ETS1 allowance - 2030').price,716/7.45);
+  close(data.electricity.find(x=>x.name==='KF26 grid spot average - 2030').price,641.6130136986301/7.45);
+  assert.equal(provenance.electricity['KF26 grid spot average - 2030'].price.priceYear,2026);
+  assert.ok(!provenance.electricity['KF26 grid spot average - 2030'].tariff);
 });
 test('matches Danish 2030 scenario grid',()=>{
   const results=danish2030();
