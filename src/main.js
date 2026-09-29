@@ -10,11 +10,11 @@ import {editInput, resetInput, resetAllInputs} from './input-store.js';
 const root = document.querySelector('#app');
 const state = {...defaults};
 let edits = {};
-let activeTab = location.hash === '#inputs' ? 'inputs' : 'dashboard';
+let activeTab = location.hash === '#inputs' ? 'inputs' : location.hash === '#heat' ? 'heat' : 'dashboard';
 let inputCategory = 'electrolysers';
 let inputQuery = '';
 let chartYear = null;
-const header = () => `<header class="topbar"><div class="brand"><span class="brand-mark">H₂</span><span>Hydrogen cost calculator</span></div><nav aria-label="Main navigation"><a href="#dashboard" aria-current="${activeTab==='dashboard'?'page':'false'}">Dashboard</a><a href="#inputs" aria-current="${activeTab==='inputs'?'page':'false'}">Input data</a></nav>${activeTab==='dashboard'?'<button id="reset" class="subtle">Reset scenario</button>':''}</header>`;
+const header = () => `<header class="topbar"><div class="brand"><span class="brand-mark">H₂</span><span>Hydrogen cost calculator</span></div><nav aria-label="Main navigation"><a href="#dashboard" aria-current="${activeTab==='dashboard'?'page':'false'}">Dashboard</a><a href="#heat" aria-current="${activeTab==='heat'?'page':'false'}">Heat flow</a><a href="#inputs" aria-current="${activeTab==='inputs'?'page':'false'}">Input data</a></nav>${activeTab==='dashboard'?'<button id="reset" class="subtle">Reset scenario</button>':''}</header>`;
 const fmt = (n, digits=2) => new Intl.NumberFormat('en-US',{maximumFractionDigits:digits,minimumFractionDigits:digits}).format(n);
 const escape = s => String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const by = (key, value) => data[key].find(row => row.name === value);
@@ -35,6 +35,10 @@ function render() {
   let r;
   try { r = calculate(state, edits); } catch (error) {
     root.innerHTML = `<main class="shell"><h1>Hydrogen cost calculator</h1><p class="error">${escape(error.message)}</p><button id="reset">Restore workbook defaults</button></main>`;
+    return;
+  }
+  if (activeTab === 'heat') {
+    root.innerHTML = `${header()}<main class="shell heat-page"><div class="heading"><div><p class="eyebrow">WORKBOOK HEAT PATHWAYS</p><h1>District and process heat</h1><p>Explore the input energy, conversion technology and resulting cost of heat.</p></div><label class="field heat-year"><span>Technology year</span><select data-state="heatYear">${options([2020,2030,2040,2050],state.heatYear)}</select></label></div>${renderHeatFlow(r,state)}<p class="note">Source: Flow Chart - Heat and HeatCalculation in Hydrogen_calc_tool_17May22_clean.xlsx. Icons from the supplied workbook.</p></main>`;
     return;
   }
   const p = r.p;
@@ -132,5 +136,5 @@ root.addEventListener('click', event => {
   if(target.id==='reset-inputs'){resetAllInputs();Object.assign(state,defaults);edits={};render();}
   if(target.dataset.resetCategory){resetInput(target.dataset.resetCategory,target.dataset.resetId);Object.assign(state,defaults);edits={};render();}
 });
-window.addEventListener('hashchange',()=>{activeTab=location.hash==='#inputs'?'inputs':'dashboard';render();});
+window.addEventListener('hashchange',()=>{activeTab=location.hash==='#inputs'?'inputs':location.hash==='#heat'?'heat':'dashboard';render();});
 render();
