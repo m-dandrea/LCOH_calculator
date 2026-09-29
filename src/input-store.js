@@ -9,8 +9,10 @@ export const provenance = sources;
 export const workbookProvenance = workbookSources;
 const key = 'lcoh-input-overrides-v1';
 const customKey = 'lcoh-input-custom-v1';
+const removedKey = 'lcoh-input-removed-v1';
 let overrides = {};
 let customRecords = {};
+let removedRecords = {};
 
 export function recordId(category, row) {
   if (category === 'defaults') return 'model';
@@ -35,6 +37,10 @@ function assign(category, id, field, value) {
 function baselineValue(category, id, field) {
   const record = getRecord(baseline, category, id);
   return record?.[category === 'fuelEmissions' ? id : field];
+}
+
+function originalValue(category, id, field) {
+  return customRecords[category]?.[id]?.row?.[field] ?? baselineValue(category, id, field);
 }
 
 function valid(category, field, value) {
@@ -71,6 +77,10 @@ function persistCustom() {
   try { localStorage.setItem(customKey, JSON.stringify(customRecords)); } catch { /* Still editable in this session. */ }
 }
 
+function persistRemoved() {
+  try { localStorage.setItem(removedKey, JSON.stringify(removedRecords)); } catch { /* Still editable in this session. */ }
+}
+
 const fieldsFor = category => ({
   electricity:['price','tariff','emissions'], carbon:['price'], transmission:['losses','cost'],
   electrolysers:['capex','opex','efficiency','heat','lifetime','hours'],
@@ -93,31 +103,51 @@ export function addInput(category, row, persist=true) {
   if (required.some(field => field === 'name' ? !String(row[field] || '').trim() : field === 'year' ? !Number.isInteger(Number(row[field])) || Number(row[field]) < 1 : !valid(category, field, Number(row[field])))) throw new Error('Complete every field with valid nonnegative values.');
   data[category].push(structuredClone(row));
   ((customRecords[category] ??= {})[id] = {row: structuredClone(row)});
+  delete removedRecords[category]?.[id];
   if (persist) persistCustom();
 }
 
 export function removeInput(category, id) {
-  if (!isCustom(category, id)) throw new Error('Only records added in this browser can be removed.');
+  if (!data[category]?.length) throw new Error('This table has no records to remove.');
+  if (data[category].length <= 1) throw new Error('Keep at least one record in this table.');
   const index = data[category].findIndex(row => recordId(category, row) === id);
-  if (index >= 0) data[category].splice(index, 1);
-  delete customRecords[category][id];
+  if (index < 0) throw new Error('Unknown input');
+  data[category].splice(index, 1);
+  if (isCustom(category, id)) delete customRecords[category][id];
+  else ((removedRecords[category] ??= {})[id] = true);
   delete overrides[category]?.[id];
-  persistCustom(); persist();
+  persistCustom(); persistRemoved(); persist();
 }
 
 try {
   const savedCustom = JSON.parse(localStorage.getItem(customKey) || '{}');
+  customRecords = savedCustom && typeof savedCustom === 'object' ? savedCustom : {};
+  const savedRemoved = JSON.parse(localStorage.getItem(removedKey) || '{}');
+  removedRecords = savedRemoved && typeof savedRemoved === 'object' ? savedRemoved : {};
+  for (const [category, records] of Object.entries(removedRecords)) {
+    for (const id of Object.keys(records || {})) {
+      if (customRecords[category]?.[id]) continue;
+      const index = data[category]?.findIndex(row => recordId(category, row) === id);
+      if (index >= 0) data[category].splice(index, 1);
+    }
+  }
   for (const [category, records] of Object.entries(savedCustom))
     for (const entry of Object.values(records))
       if (entry?.row) {
-        try { addInput(category, entry.row, false); } catch { /* Ignore invalid old custom data. */ }
+        try {
+          const id = recordId(category, entry.row);
+          const existing = data[category]?.findIndex(row => recordId(category, row) === id);
+          if (existing >= 0) data[category].splice(existing, 1);
+          delete customRecords[category]?.[id];
+          addInput(category, entry.row, false);
+        } catch { /* Ignore invalid old custom data. */ }
       }
 } catch { /* Device storage is optional. */ }
 
 export function editInput(category, id, field, value) {
   if (!valid(category, field, value)) throw new Error('Enter a valid nonnegative number in the expected units.');
   assign(category, id, field, value);
-  const original = baselineValue(category, id, field);
+  const original = originalValue(category, id, field);
   if (value === original) {
     delete overrides[category]?.[id]?.[field];
   } else {
@@ -129,22 +159,20 @@ export function editInput(category, id, field, value) {
 export function resetInput(category, id) {
   const fields = overrides[category]?.[id];
   if (!fields) return;
-  for (const field of Object.keys(fields)) assign(category, id, field, baselineValue(category, id, field));
+  for (const field of Object.keys(fields)) assign(category, id, field, originalValue(category, id, field));
   delete overrides[category][id];
   persist();
 }
 
 export function resetAllInputs() {
-  for (const [category, records] of Object.entries(overrides))
-    for (const id of Object.keys(records)) resetInput(category, id);
+  for (const category of Object.keys(baseline)) {
+    if (Array.isArray(baseline[category])) data[category] = structuredClone(baseline[category]);
+    else if (category === 'defaults') Object.assign(data.defaults, structuredClone(baseline.defaults));
+  }
   overrides = {};
-  for (const [category, records] of Object.entries(customRecords))
-    for (const id of Object.keys(records)) {
-      const index = data[category]?.findIndex(row => recordId(category, row) === id);
-      if (index >= 0) data[category].splice(index, 1);
-    }
   customRecords = {};
-  persistCustom();
+  removedRecords = {};
+  persistCustom(); persistRemoved();
   persist();
 }
 

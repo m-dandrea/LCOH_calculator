@@ -9,7 +9,7 @@ w = openpyxl.load_workbook(UPLOAD / 'Hydrogen_calc_tool_17May22_clean.xlsx', rea
 out = {}
 
 def put(category, record, fields, source):
-    text = str(source).strip() if source not in (None, '') else 'Not stated in Excel'
+    text = str(source).strip() if source not in (None, '') else 'Guess'
     out.setdefault(category, {}).setdefault(str(record), {}).update({field: text for field in fields})
 
 # Electricity comments are explicit in the source table (including Guess).
@@ -21,12 +21,13 @@ for r in range(4, 8):
 s = w['el.trans']
 put('transmission', 'HVDC', ['losses', 'cost'], s['E4'].value or s['D4'].value)
 
-# Row-level notes in the technology and heat tables are the workbook's source text.
+# Row-level source notes in the workbook. Blank notes are deliberately reported
+# as Guess rather than implying that the workbook itself is an external source.
 for category, sheet, first, last, id_col, note_cols in [
     ('electrolysers', 'electrolyser', 4, 15, 'A', ['J']),
-    ('storage', 'h2.storage', 3, 14, 'A', ['N', 'M']),
-    ('districtHeat', 'DH Summary', 6, 52, 'B', ['K']),
-    ('processHeat', 'ProcH Summary', 6, 37, 'B', ['K']),
+    ('storage', 'h2.storage', 3, 14, 'A', ['N']),
+    ('districtHeat', 'DH Summary', 6, 52, 'B', []),
+    ('processHeat', 'ProcH Summary', 6, 37, 'B', []),
 ]:
     s = w[sheet]
     for r in range(first, last + 1):
@@ -46,18 +47,21 @@ for r in range(4, 10):
         put('distribution', w['h2.distr'][f'A{r}'].value, ['fixed','variable','losses','levelised'], None)
 for r in range(4, 15):
     if w['carbontax'][f'A{r}'].value:
-        put('carbon', w['carbontax'][f'A{r}'].value, ['price'], None)
+        name = str(w['carbontax'][f'A{r}'].value)
+        source = ('IEA Advanced Economies with Net Zero Pledges' if 'IEA Advanced Economies' in name
+                  else 'IEA Net Zero by 2050' if 'IEA Net Zero' in name else None)
+        put('carbon', name, ['price'], source)
 for r in range(5, 37):
     year = w['Fuel price projection'][f'A{r}'].value
     if isinstance(year, int):
-        put('fuelPrices', year, ['gas','coal','diesel','wood'], 'Fuel price projection · CIF/import prices (2019-prices kr./GJ)')
+        put('fuelPrices', year, ['gas','coal','diesel','wood'], None)
 for fuel in ['gas','coal','diesel','wood']:
-    put('fuelEmissions', fuel, [fuel], 'fossil.source · emission factor table')
+    put('fuelEmissions', fuel, [fuel], w['fossil.source']['D18'].value)
 for r in range(4, 8):
     if w['Elomk.'][f'C{r}'].value:
         put('danishScenarios', w['Elomk.'][f'C{r}'].value, ['price','tariff','hours'], w['Elomk.'][f'I{r}'].value)
 
-out['defaults'] = {'model': {field: 'Not stated in Excel' for field in [
+out['defaults'] = {'model': {field: 'Guess' for field in [
     'transmissionKm','distributionKm','loadFactor','storageUse','storageDiscount',
     'productionDiscount','heatDiscount','districtHours','processHours','hydrogenMwhPerKg','dkkPerEur','transmission']}}
 (ROOT / 'data' / 'workbook-provenance.json').write_text(json.dumps(out, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

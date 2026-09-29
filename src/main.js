@@ -127,7 +127,14 @@ root.addEventListener('click', event => {
     return;
   }
   if(target.dataset.removeCategory){
-    try { removeInput(target.dataset.removeCategory,target.dataset.removeId); render(); }
+    try {
+      const category=target.dataset.removeCategory;
+      removeInput(category,target.dataset.removeId);
+      const fallback={electricity:'electricity',carbon:'carbon',electrolysers:'electrolyser',storage:'storage',distribution:'distribution',transmission:'transmission'}[category];
+      if(fallback && data[category]?.length && !data[category].some(row=>row.name===state[fallback])) state[fallback]=data[category][0].name;
+      if(category==='fuelPrices' && data.fuelPrices.length && !data.fuelPrices.some(row=>row.year===state.fuelYear)) state.fuelYear=data.fuelPrices[0].year;
+      render();
+    }
     catch(error) { window.alert(error.message); }
     return;
   }

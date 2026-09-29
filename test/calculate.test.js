@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {calculate, defaults, danish2030, data} from '../src/calculate.js';
-import {baseline, provenance, editInput, resetInput, addInput, removeInput, isCustom} from '../src/input-store.js';
+import {baseline, provenance, workbookProvenance, editInput, resetInput, resetAllInputs, addInput, removeInput, isCustom} from '../src/input-store.js';
 
 function close(actual, expected) { assert.ok(Math.abs(actual-expected)<1e-8, `${actual} != ${expected}`); }
 test('uses the 2030 AF25/KF26 reference pathway and carries hydrogen into heat', () => {
@@ -32,6 +32,13 @@ test('published forecast cells replace only matching fields', () => {
   close(data.transmission.find(x=>x.name==='AF25 grid reference - DK1').losses,.0677);
   close(data.transmission.find(x=>x.name==='AF25 grid reference - DK2').losses,.0622);
   assert.equal(provenance.transmission['AF25 grid reference - DK1'].losses.cell,'Elforbrug!H6');
+});
+test('workbook provenance uses external sources or Guess', () => {
+  assert.equal(workbookProvenance.electrolysers['Alkaline 100 MW - 2030'].capex, 'Guess');
+  assert.match(workbookProvenance.transmission.HVDC.cost, /^https:\/\//);
+  assert.match(workbookProvenance.fuelEmissions.gas.gas, /standardfaktorer/);
+  assert.equal(workbookProvenance.fuelPrices['2030'].gas, 'Guess');
+  assert.equal(workbookProvenance.carbon['IEA Advanced Economies with Net Zero Pledges - 2030'].price, 'IEA Advanced Economies with Net Zero Pledges');
 });
 test('network case changes point 3 and downstream hydrogen and heat costs', () => {
   const dk1=calculate();
@@ -93,4 +100,13 @@ test('updates only matched catalogue cells and permits local edits', () => {
   assert.ok(calculate({...defaults,electrolyser:name}).perKg>before);
   resetInput('electrolysers',name);
   close(calculate({...defaults,electrolyser:name}).perKg,before);
+});
+
+test('existing workbook rows can be removed and restored', () => {
+  const name=baseline.electricity[0].name;
+  removeInput('electricity',name);
+  assert.ok(!data.electricity.some(x=>x.name===name));
+  resetAllInputs();
+  assert.ok(data.electricity.some(x=>x.name===name));
+  assert.equal(data.electricity.length,baseline.electricity.length);
 });

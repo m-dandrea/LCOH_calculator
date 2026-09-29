@@ -56,6 +56,7 @@ export function renderHeatFlow(result,state) {
 export function renderHeatComparison(result,state) {
   const section=(type,title)=>{
     const rows=[...result.heat[type]].sort((a,b)=>a.total-b.total);
+    if (!rows.length) return `<section class="heat-ranking"><div class="heat-ranking-head"><div><h3>${title}</h3><p>No matching technology records remain for ${esc(state.heatYear)}.</p></div></div></section>`;
     const cheapest=rows[0];
     const selected=new Set(routes[type].map(route=>{
       const x=chosenRow(result,state,type,route);
