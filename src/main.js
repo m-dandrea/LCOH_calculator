@@ -2,6 +2,8 @@ import {data, defaults, calculate, danish2030} from './calculate.js';
 import './style.css';
 import './flow.css';
 import './inputs.css';
+import './heat-flow.css';
+import {renderHeatFlow} from './heat-flow.js';
 import {renderInputs, renderCharts} from './inputs.js';
 import {editInput, resetInput, resetAllInputs} from './input-store.js';
 
@@ -78,6 +80,7 @@ function render() {
       <h3>Cost build-up <small>€/MWh H₂</small></h3><div class="breakdown">${row('Production',r.produced)}${row('Storage and energy loss',r.stored-r.produced)}${row('Distribution',r.distributionCost)}<div class="break-row total"><span>Delivered</span><strong>${fmt(r.delivered)}</strong></div></div>
       <p class="note">The model retains the original workbook formulas. Updated catalogue values and original workbook assumptions are identified in the Input data tab.</p>
     </section></div>
+    ${renderHeatFlow(r,state)}
     <section class="comparison"><div class="section-head"><span class="step">03</span><div><h2>Fuel and heat comparisons</h2><p>Fuel costs use the selected projection year. Heat uses ${state.heatYear} technology data and the current hydrogen scenario.</p></div></div>
       <div class="compare-grid"><div><h3>Fossil fuel cost <small>€/MWh incl. CO₂ tax</small></h3><div class="breakdown">${[['Coal','coal'],['Natural gas','gas'],['Diesel','diesel'],['Wood pellets (industrial)','wood']].map(([label,key])=>row(label,r.fossils[key])).join('')}</div></div>
       <div><div class="heat-title"><h3>Selected heat pathways <small>€/MWh heat</small></h3>${select('Heat technology year','heatYear',[2020,2030,2040,2050])}</div><div class="table-wrap"><table><thead><tr><th>Use</th><th>Technology</th><th>Fuel</th><th class="num">LCOH</th></tr></thead><tbody>${heatRows}</tbody></table></div></div></div>
@@ -103,6 +106,9 @@ root.addEventListener('change', event => {
   if (target.dataset.state) {
     const key=target.dataset.state;
     state[key]=target.type==='number'||['fuelYear','heatYear'].includes(key) ? Number(target.value) : target.value;
+    if(key==='heatYear'){state.heatDistrictTechnology=null;state.heatProcessTechnology=null;state.heatDistrictFuel=null;state.heatProcessFuel=null;}
+    if(key==='heatDistrictTechnology') state.heatDistrictFuel=null;
+    if(key==='heatProcessTechnology') state.heatProcessFuel=null;
     const related={electricity:['electricityPrice','tariff','emissions'],carbon:['carbonPrice'],electrolyser:['capex','opex','efficiency','hours','lifetime'],storage:['storageEfficiency']};
     (related[key]||[]).forEach(k=>delete edits[k]);
   }
