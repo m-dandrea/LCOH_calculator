@@ -1,6 +1,6 @@
 # Hydrogen cost calculator
 
-A browser app built from `Hydrogen_calc_tool_17May22_clean.xlsx`. Its Hydrogen flowchart follows the workbook's illustrated pathway from electricity to the hydrogen tap, with choices and stage costs in the flow. A second flowchart follows the workbook's district and process heat branches, using its icons and the current fuel and technology inputs. The Heat flow tab ranks district and process heat options by calculated cost, including hydrogen at the delivered cost from the Hydrogen flowchart. The separate Danish 2030 electricity scenarios remain on the hydrogen page. The Inputs tab shows editable source values. Matched technology rows were updated from the supplied data sheets, while values without a comparable source remain from the workbook. It is not a live price feed.
+A browser app built from `Hydrogen_calc_tool_17May22_clean.xlsx`. Its Hydrogen flowchart follows the workbook's illustrated pathway from electricity to the hydrogen tap, with choices and stage costs in the flow. A second flowchart follows the workbook's district and process heat branches, using its icons and the current fuel and technology inputs. The Heat flow tab displays all four district heating branches (electric boiler, electricity and excess heat, natural gas, hydrogen) and three process heat branches (electricity, natural gas, hydrogen) from the workbook sketch. Each branch has a technology selector; the tab ranks all available heat options by calculated cost, including hydrogen at the delivered cost from the Hydrogen flowchart. The separate Danish 2030 electricity scenarios remain on the hydrogen page. The Inputs tab shows editable source values. Matched technology rows were updated from the supplied data sheets, while values without a comparable source remain from the workbook. It is not a live price feed.
 
 ## Run
 
@@ -35,3 +35,5 @@ The extraction script reads the original workbook from `../upload/` when availab
 Catalogue values retain their published currency and price-year basis; no inflation adjustment was applied. Re-run `python scripts/extract_workbook.py` followed by `python scripts/update_catalogue_inputs.py` with the supplied files in `../upload/` to regenerate the JSON.
 
 The Inputs tab also has comparison charts beneath each table. Technology charts compare CAPEX, efficiency, and an operating or lifetime measure for one selected catalogue year. The charts use the current editable values and keep unlike units on separate scales.
+
+The workbook has no 2040 district heating calculation rows for the electric boiler, natural gas, or hydrogen branches. The flowchart marks those routes unavailable in 2040 instead of inventing values.

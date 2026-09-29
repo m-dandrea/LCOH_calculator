@@ -93,9 +93,6 @@ root.addEventListener('change', event => {
   if (target.dataset.state) {
     const key=target.dataset.state;
     state[key]=target.type==='number'||['fuelYear','heatYear'].includes(key) ? Number(target.value) : target.value;
-    if(key==='heatYear'){state.heatDistrictTechnology=null;state.heatProcessTechnology=null;state.heatDistrictFuel=null;state.heatProcessFuel=null;}
-    if(key==='heatDistrictTechnology') state.heatDistrictFuel=null;
-    if(key==='heatProcessTechnology') state.heatProcessFuel=null;
     const related={electricity:['electricityPrice','tariff','emissions'],carbon:['carbonPrice'],electrolyser:['capex','opex','efficiency','hours','lifetime'],storage:['storageEfficiency']};
     (related[key]||[]).forEach(k=>delete edits[k]);
   }
