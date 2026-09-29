@@ -11,7 +11,7 @@ export function calculate(s = defaults, edits = {}) {
   const el = find(data.electrolysers, s.electrolyser);
   const st = find(data.storage, s.storage);
   const dist = find(data.distribution, s.distribution);
-  const transmission = data.transmission[0];
+  const transmission = find(data.transmission, s.transmission || 'HVDC');
   if (!e || !c || !el || !st || !dist || !transmission) throw new Error('Unknown technology selection');
   const p = {electricityPrice:e.price,tariff:e.tariff,emissions:e.emissions,carbonPrice:c.price,
     capex:el.capex,opex:el.opex,efficiency:el.efficiency,hours:el.hours,lifetime:el.lifetime,
@@ -23,7 +23,8 @@ export function calculate(s = defaults, edits = {}) {
       p.productionDiscount < 0 || p.loadFactor <= 0 || p.loadFactor > 1 || p.transmissionKm < 0 ||
       p.distributionKm < 0 || p.capex < 0 || p.opex < 0 || p.tariff < 0 || p.electricityPrice < 0 ||
       p.efficiency > 1 || p.storageEfficiency > 1) throw new Error('Enter valid positive inputs and efficiencies between 0 and 100%.');
-  // The workbook's HVDC transmission data are editable on the Inputs tab.
+  // The AF25 grid reference applies whole-grid losses but no separate HVDC
+  // distance charge. HVDC retains the original workbook cost and loss model.
   const electricity = p.electricityPrice + p.tariff;
   const carbonElectricity = p.emissions / 1000 * p.carbonPrice;
   const transmitted = (electricity + carbonElectricity + (transmission.cost / (p.loadFactor * 8760)) * p.transmissionKm) / (1 - transmission.losses);
@@ -52,7 +53,7 @@ export function calculate(s = defaults, edits = {}) {
     'Natural Gas':{base:heatFuelPrice.gas / s.dkkPerEur * 3.6, tax:data.fuelEmissions.gas * p.carbonPrice},
     Hydrogen:{base:delivered - deliveredEmission * p.carbonPrice, tax:deliveredEmission * p.carbonPrice}
   };
-  return {p, e, c, el, st, dist, electricity, carbonElectricity, transmitted, produced,
+  return {p, e, c, el, st, dist, transmission, electricity, carbonElectricity, transmitted, produced,
     stored, delivered, perKg:delivered * perKg, directKg:produced * perKg,
     storageElectricity, storageCapex, storageFixed, distributionCost,
     capexPerMwh, fixedPerMwh, deliveredEmission, fossils, heatFuels,

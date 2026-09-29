@@ -85,6 +85,21 @@ data['defaults'].update(electricity='KF26 grid spot average - 2030',
                         carbon='AF25 ETS1 allowance - 2030',
                         electrolyser='Alkaline 100 MW - 2030',
                         storage='LOHC -2030', fuelYear=2030, heatYear=2030)
+
+# AF25's stated network losses are system-wide (net versus gross demand), not
+# measured losses of a dedicated HVDC connection. Keep HVDC as its own workbook
+# option, with its distance-based charge, and label the AF25 proxy explicitly.
+grid_demand = af['Elforbrug']
+for name, row in [('AF25 grid reference - DK1', 6), ('AF25 grid reference - DK2', 7)]:
+    loss = grid_demand[f'H{row}'].value  # 2030; AF25 holds this constant to 2050
+    if not isinstance(loss, (int, float)) or not 0 < loss < 1:
+        raise ValueError(f'Missing AF25 grid loss for {name}')
+    item = {'name': name, 'losses': loss, 'cost': 0}
+    data['transmission'] = [r for r in data['transmission'] if r['name'] != name] + [item]
+    source('transmission', name, 'losses', af_name, f'Elforbrug!H{row}',
+           'Whole-grid loss share (gross versus net demand), not HVDC cable loss',
+           'fraction', None)
+data['defaults']['transmission'] = 'AF25 grid reference - DK1'
 DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 SOURCES.write_text(json.dumps(sources, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-print('Updated AF25 fuel and allowance scenarios, KF26 spot-price options, and 2030 defaults')
+print('Updated AF25 fuel, allowance and grid-loss scenarios, KF26 spot-price options, and 2030 defaults')

@@ -13,7 +13,7 @@ npm run dev
 
 ## Model notes
 
-- Price chain: electricity plus tariff and carbon tax → HVDC transmission → electrolyser CAPEX and fixed charge → storage investment and energy loss → hydrogen distribution.
+- Price chain: electricity plus tariff and carbon tax → selected grid-loss or HVDC transmission case → electrolyser CAPEX and fixed charge → storage investment and energy loss → hydrogen distribution.
 - Electrolyser fixed charge follows the workbook's `h2. prod cost!E17` formula, which references CAPEX instead of the OPEX percentage field. The OPEX percentage is shown in the Inputs tab because the separate Danish scenario calculation uses it.
 - Heat CAPEX for process heat follows `HeatCalculation!C52:E52`, which uses the district heating full-load hours (1,752), while process heat fixed O&M uses 7,884 hours.
 - Hydrogen energy content is 0.0394 MWh/kg LHV, as in the workbook. Other assumptions are intentionally preserved even where units or conventions in the source seem unusual.
@@ -34,12 +34,13 @@ The extraction script reads the original workbook from `../upload/` when availab
 
 ## AF25 and KF26 reference scenario
 
-The default pathway selects the **KF26 2030 grid spot average**, the **AF25 2030 ETS1 allowance** option, and the existing 2030 alkaline electrolyser and LOHC storage rows. The 2030 fuel and heat year is selected. Original electricity and carbon options remain selectable. The workbook's grid tariff and emissions factor are carried over because the new datasets do not supply equivalent model inputs.
+The default pathway selects the **KF26 2030 grid spot average**, the **AF25 2030 ETS1 allowance** option, the **AF25 DK1 grid-loss reference** at point 3, and the existing 2030 alkaline electrolyser and LOHC storage rows. The 2030 fuel and heat year is selected. Original electricity, carbon and HVDC options remain selectable. The workbook's grid tariff and emissions factor are carried over because the new datasets do not supply equivalent model inputs.
 
 - `offentligt_dataset_AF25_20251107_v2.xlsx`, `Brændselspriser`: annual Danish **import** prices for natural gas (row 8), coal (row 6), and wood pellets (row 27), 2025–2050, in 2025 DKK/GJ. These match the workbook's `Fuel price projection` CIF/import columns C, D, and J. Fuel used by the heat calculation therefore follows AF25. No corresponding diesel import series was available.
 - The same dataset, `CO2-kvotepris` row 4: ETS1 allowance prices for 2030, 2035, 2040, and 2050, in 2025 DKK/t. They are converted to EUR/t with the workbook's 7.45 DKK/EUR and offered as explicit choices; an ETS allowance is not automatically a tax on every fuel or user.
 - `KF26 - Resultater - Tal bag figurer september 2026.xlsx`, `25.1`: 8,760 hourly spot prices in 2026 DKK/MWh for 2030 and 2035. Their arithmetic annual means are 641.61 and 444.85 DKK/MWh, converted to EUR/MWh using the workbook exchange rate. An electrolyser with flexible dispatch, contracted electricity, or a different price area can face a different effective price. These are labeled grid choices, not offgrid generation costs.
 - `KF26_Del1.pdf` figure 18.1's pipeline gas price is not the same as the import fuel series the workbook uses, so it is not substituted. `AF25 - Sammenfatningsnotat (NY)_0.pdf` explains that AF25 does not itself provide the simulated future electricity prices in that release.
+- `offentligt_dataset_AF25_20251107_v2.xlsx`, `Elforbrug!H6:H7`: 2030 system-wide net-versus-gross electricity loss assumptions, **6.77% in DK1** and **6.22% in DK2**. Point 3 offers these as explicitly labeled grid references. Their standalone distance cost is zero because no dedicated HVDC link is modeled with the grid option; the electricity source's tariff is still applied. These whole-grid losses are not measured losses for a specific electrolyser connection. The original workbook's HVDC loss (2%) and €22.1/MW/km/year cost remain selectable for a dedicated connection, with its user-set distance and load factor. Choosing an offgrid electricity source switches point 3 to HVDC; choosing a grid source switches to DK1, after which DK2 or HVDC can be selected manually. KF26 contains no directly comparable transmission investment or cable-loss input.
 
 The new forecasts retain their published **2025** (AF25) and **2026** (KF26) price bases; the original workbook uses **2019** prices and catalogue values may use other bases. No inflation adjustment was made without a supplied index. This mixed basis limits direct cost comparisons; the provenance of each updated field is visible in Input data. The workbook's hydrogen and heat formulas remain the same.
 

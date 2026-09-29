@@ -45,7 +45,7 @@ function render() {
   const pathway = `<div class="flow-track" aria-label="Electricity to delivered hydrogen pathway">
     ${stage(1,'Electricity source',6,select('Source','electricity',data.electricity.map(x=>x.name)),r.electricity,'€/MWh')}
     ${stage(2,'CO₂ taxation',4,select('Tax scenario','carbon',data.carbon.map(x=>x.name)),r.electricity+r.carbonElectricity,'€/MWh')}
-    ${stage(3,'Transmission',5,`<div class="fixed-choice">HVDC</div>${number('Distance','transmissionKm',state.transmissionKm,'km',1)}`,r.transmitted,'€/MWh')}
+    ${stage(3,'Grid / transmission',5,`${select('Network case','transmission',data.transmission.map(x=>x.name))}${r.transmission.name==='HVDC'?number('Distance','transmissionKm',state.transmissionKm,'km',1):`<p class="tap-caption">${fmt(r.transmission.losses*100,2)}% whole-grid loss · no separate distance charge</p>`}`,r.transmitted,'€/MWh')}
     ${stage(4,'Electrolyser',2,select('Technology','electrolyser',data.electrolysers.map(x=>x.name)),r.produced,'€/MWh H₂')}
     ${stage(5,'Hydrogen storage',1,select('Technology','storage',data.storage.map(x=>x.name)),r.stored,'€/MWh H₂')}
     ${stage(6,'Distribution',0,`${select('Method','distribution',data.distribution.map(x=>x.name))}${number('Distance','distributionKm',state.distributionKm,'km',1)}`,r.delivered,'€/MWh H₂')}
@@ -56,7 +56,7 @@ function render() {
   <section class="pathway" aria-label="Hydrogen pathway"><div class="pathway-title"><div><h2>Hydrogen pathway</h2><p>Selections and distances update the cost at every stage.</p></div><span>Costs per unit of output at each stage</span></div>${pathway}</section>
   <div class="layout"><section class="controls" aria-label="Scenario inputs">
     <div class="section-head"><span class="step">01</span><h2>Other assumptions</h2></div>
-    <div class="field-grid">${number('Transmission load factor','loadFactor',state.loadFactor,'fraction',0.01)}
+    <div class="field-grid">${r.transmission.name==='HVDC'?number('Transmission load factor','loadFactor',state.loadFactor,'fraction',0.01):''}
       ${number('Storage capacity use','storageUse',state.storageUse,'fraction',0.01)}</div>
     <details><summary>Advanced assumptions <span>prices, technology and financing</span></summary><div class="field-grid advanced">
       ${number('Electricity price','electricityPrice',edits.electricityPrice??e.price,'€/MWh')}${number('Grid tariff','tariff',edits.tariff??e.tariff,'€/MWh')}
@@ -69,7 +69,7 @@ function render() {
     <section class="results" aria-label="Calculated results"><div class="section-head"><span class="step">02</span><h2>Cost detail</h2></div>
       <div class="metric-grid">${card('Direct from electrolyser',r.directKg,'€/kg')}${card('Production',r.produced,'€/MWh')}${card('Electricity at electrolyser',r.transmitted,'€/MWh')}</div>
       <h3>Cost build-up <small>€/MWh H₂</small></h3><div class="breakdown">${row('Production',r.produced)}${row('Storage and energy loss',r.stored-r.produced)}${row('Distribution',r.distributionCost)}<div class="break-row total"><span>Delivered</span><strong>${fmt(r.delivered)}</strong></div></div>
-      <p class="note">The model retains the original workbook formulas. KF26 grid electricity is the simple mean of 8,760 hourly spot prices, not an electrolyser dispatch price. Its tariff and emissions remain workbook values. AF25 ETS1 is an allowance scenario, not a universal tax. Forecasts retain their published 2025/2026 price bases without inflation adjustment; other unmatched assumptions retain workbook values. Inspect each cell's source in Input data.</p>
+      <p class="note">Point 3 uses AF25's whole-grid loss reference (DK1 6.77% or DK2 6.22%) for a grid scenario, with no additional HVDC distance charge; the tariff is already selected with electricity. These system-wide losses are a proxy, not a specific electrolyser connection estimate. The workbook's 2% HVDC loss and per-km charge remain selectable for a dedicated cable. KF26 provides spot prices, not transmission CAPEX or losses. Its price is the simple mean of 8,760 hours, not an electrolyser dispatch price. The grid tariff and emissions remain workbook values. AF25 ETS1 is an allowance scenario. Price bases are not inflation-adjusted; inspect each source in Input data.</p>
     </section></div>
     <section class="comparison"><div class="section-head"><span class="step">03</span><h2>Danish 2030 hydrogen scenarios</h2></div>
       <details class="all-tech"><summary>Danish 2030 electricity scenarios · DKK/GJ H₂</summary><p class="note">Separate scenario calculation from the workbook’s “Brint Input & control” and “Brint Cost” sheets. Alkaline 100 MW, 2030 assumptions.</p><div class="table-wrap"><table><thead><tr><th>Scenario</th><th>Electricity source</th><th class="num">DKK/MWh</th><th class="num">Tariff</th><th class="num">FLH</th><th class="num">DKK/GJ</th></tr></thead><tbody>${danish2030().map(x=>`<tr><td>${escape(x.name)}</td><td>${escape(x.source)}</td><td class="num">${fmt(x.price,0)}</td><td class="num">${fmt(x.tariff,0)}</td><td class="num">${fmt(x.hours,0)}</td><td class="num bold">${fmt(x.cost)}</td></tr>`).join('')}</tbody></table></div></details>
@@ -95,6 +95,7 @@ root.addEventListener('change', event => {
     state[key]=target.type==='number'||['fuelYear','heatYear'].includes(key) ? Number(target.value) : target.value;
     const related={electricity:['electricityPrice','tariff','emissions'],carbon:['carbonPrice'],electrolyser:['capex','opex','efficiency','hours','lifetime'],storage:['storageEfficiency']};
     (related[key]||[]).forEach(k=>delete edits[k]);
+    if(key==='electricity') state.transmission = state.electricity.startsWith('KF26 grid spot') || state.electricity.startsWith('El grid') ? 'AF25 grid reference - DK1' : 'HVDC';
   }
   if (target.dataset.edit) edits[target.dataset.edit]=Number(target.value);
   try { calculate(state,edits); } catch(error) {

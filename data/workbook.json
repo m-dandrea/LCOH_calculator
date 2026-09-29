@@ -419,6 +419,16 @@
       "name": "HVDC",
       "losses": 0.02,
       "cost": 22.1
+    },
+    {
+      "name": "AF25 grid reference - DK1",
+      "losses": 0.0677,
+      "cost": 0
+    },
+    {
+      "name": "AF25 grid reference - DK2",
+      "losses": 0.0622,
+      "cost": 0
     }
   ],
   "fuelPrices": [
@@ -1574,6 +1584,7 @@
     "districtHours": 1752,
     "processHours": 7884,
     "hydrogenMwhPerKg": 0.0394,
-    "dkkPerEur": 7.45
+    "dkkPerEur": 7.45,
+    "transmission": "AF25 grid reference - DK1"
   }
 }

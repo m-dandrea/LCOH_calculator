@@ -4307,5 +4307,27 @@
         "conversion": "annual mean, divide by workbook DKK/EUR (7.45)"
       }
     }
+  },
+  "transmission": {
+    "AF25 grid reference - DK1": {
+      "losses": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Elforbrug!H6",
+        "parameter": "Whole-grid loss share (gross versus net demand), not HVDC cable loss",
+        "unit": "fraction",
+        "priceYear": null,
+        "conversion": 1
+      }
+    },
+    "AF25 grid reference - DK2": {
+      "losses": {
+        "file": "offentligt_dataset_AF25_20251107_v2.xlsx",
+        "cell": "Elforbrug!H7",
+        "parameter": "Whole-grid loss share (gross versus net demand), not HVDC cable loss",
+        "unit": "fraction",
+        "priceYear": null,
+        "conversion": 1
+      }
+    }
   }
 }
